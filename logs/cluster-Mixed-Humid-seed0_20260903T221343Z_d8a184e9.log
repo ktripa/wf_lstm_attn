@@ -1,0 +1,24 @@
+2026-09-03 18:13:43,965 [INFO] run_id=cluster-Mixed-Humid-seed0_20260903T221343Z_d8a184e9 git_commit=unknown
+2026-09-03 18:13:43,970 [INFO] cluster=Mixed-Humid seed=0 lookback=60 run_id=cluster-Mixed-Humid-seed0_20260903T221343Z_d8a184e9
+2026-09-03 18:13:45,824 [INFO] raw grid loaded: n_cells=1985 n_weeks=1095
+2026-09-03 18:13:46,042 [INFO] sample table: n=257715 n_cells_in_cluster=249
+2026-09-03 18:13:46,042 [INFO] exclusions: {'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 257715, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_target': 0, 'kept_samples': 257715}
+2026-09-03 18:13:46,060 [INFO] split counts: {'test': 51792, 'train': 180027, 'val': 25896}
+2026-09-03 18:13:50,666 [INFO] device=cuda (NVIDIA A2)
+2026-09-03 18:13:58,115 [INFO] train n=180027 val n=25896 test n=51792
+2026-09-03 18:14:04,459 [INFO] epoch=0 train_loss_std=0.4252 val_rmse_fwi=10.6733
+2026-09-03 18:14:06,655 [INFO] epoch=1 train_loss_std=0.3127 val_rmse_fwi=9.6407
+2026-09-03 18:14:08,857 [INFO] epoch=2 train_loss_std=0.2795 val_rmse_fwi=9.2212
+2026-09-03 18:14:11,064 [INFO] epoch=3 train_loss_std=0.2540 val_rmse_fwi=9.1041
+2026-09-03 18:14:13,273 [INFO] epoch=4 train_loss_std=0.2338 val_rmse_fwi=8.9044
+2026-09-03 18:14:15,483 [INFO] epoch=5 train_loss_std=0.2221 val_rmse_fwi=8.9976
+2026-09-03 18:14:17,693 [INFO] epoch=6 train_loss_std=0.2114 val_rmse_fwi=9.0423
+2026-09-03 18:14:19,903 [INFO] epoch=7 train_loss_std=0.2033 val_rmse_fwi=9.0017
+2026-09-03 18:14:22,114 [INFO] epoch=8 train_loss_std=0.1973 val_rmse_fwi=9.0564
+2026-09-03 18:14:24,325 [INFO] epoch=9 train_loss_std=0.1909 val_rmse_fwi=9.1447
+2026-09-03 18:14:26,537 [INFO] epoch=10 train_loss_std=0.1862 val_rmse_fwi=9.2243
+2026-09-03 18:14:28,748 [INFO] epoch=11 train_loss_std=0.1814 val_rmse_fwi=9.4363
+2026-09-03 18:14:30,961 [INFO] epoch=12 train_loss_std=0.1759 val_rmse_fwi=9.2333
+2026-09-03 18:14:30,961 [INFO] early stopping at epoch=12 (best val_rmse_fwi=8.9044)
+2026-09-03 18:14:33,138 [INFO] TEST (pooled, FWI units): {'units': 'fwi', 'n': 51792, 'kge': 0.8551099788213787, 'r': 0.8613906841355458, 'alpha': 0.9725970091760519, 'beta': 1.0320881892077427, 'r2': 0.7281644509064651, 'rmse': 10.024941973535455, 'mae': 7.012730850334412, 'nrmse': 0.5213785084691687, 'group': 'domain'}
+2026-09-03 18:14:33,141 [INFO] DONE cluster=Mixed-Humid seed=0 wall_time=49s

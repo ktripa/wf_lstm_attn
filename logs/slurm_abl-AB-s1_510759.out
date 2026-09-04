@@ -1,0 +1,23 @@
+host=pfc031.pf.ornl.gov seed=1 args=--branches A B
+NVIDIA A2, 15356 MiB
+2026-09-03 19:58:04,193 [INFO] run_id=ablation-AB-seed1_20260903T235804Z_7c39ca4b git_commit=unknown
+2026-09-03 19:58:04,198 [INFO] branches=('A', 'B') extra_precip=False seed=1 tag=AB
+2026-09-03 19:58:07,862 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-03 19:58:08,018 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-03 19:58:24,391 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-03 19:58:42,964 [INFO] tag=AB seed=1 epoch=0 train_loss_std=0.3331 val_rmse_fwi=14.4004
+2026-09-03 19:59:00,303 [INFO] tag=AB seed=1 epoch=1 train_loss_std=0.2657 val_rmse_fwi=14.1617
+2026-09-03 19:59:17,659 [INFO] tag=AB seed=1 epoch=2 train_loss_std=0.2485 val_rmse_fwi=14.0963
+2026-09-03 19:59:35,029 [INFO] tag=AB seed=1 epoch=3 train_loss_std=0.2378 val_rmse_fwi=14.1796
+2026-09-03 19:59:52,402 [INFO] tag=AB seed=1 epoch=4 train_loss_std=0.2299 val_rmse_fwi=14.0397
+2026-09-03 20:00:09,775 [INFO] tag=AB seed=1 epoch=5 train_loss_std=0.2235 val_rmse_fwi=14.2826
+2026-09-03 20:00:27,147 [INFO] tag=AB seed=1 epoch=6 train_loss_std=0.2177 val_rmse_fwi=14.3203
+2026-09-03 20:00:44,528 [INFO] tag=AB seed=1 epoch=7 train_loss_std=0.2136 val_rmse_fwi=14.3604
+2026-09-03 20:01:01,909 [INFO] tag=AB seed=1 epoch=8 train_loss_std=0.2096 val_rmse_fwi=14.3732
+2026-09-03 20:01:19,290 [INFO] tag=AB seed=1 epoch=9 train_loss_std=0.2062 val_rmse_fwi=14.2152
+2026-09-03 20:01:36,672 [INFO] tag=AB seed=1 epoch=10 train_loss_std=0.2031 val_rmse_fwi=14.2303
+2026-09-03 20:01:54,056 [INFO] tag=AB seed=1 epoch=11 train_loss_std=0.2002 val_rmse_fwi=14.5275
+2026-09-03 20:02:11,442 [INFO] tag=AB seed=1 epoch=12 train_loss_std=0.1978 val_rmse_fwi=14.3544
+2026-09-03 20:02:11,442 [INFO] early stopping at epoch=12 (best val_rmse_fwi=14.0397)
+2026-09-03 20:02:15,175 [INFO] DONE tag=AB seed=1 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.8448519428992222, 'r': 0.8870717215386612, 'alpha': 0.8938965171614388, 'beta': 1.0077572208574783, 'r2': 0.7867295644488085, 'rmse': 14.703806031199065, 'mae': 10.42835583173446, 'nrmse': 0.4618121214857743, 'group': 'All'} wall_time=251s
+{"tag": "AB", "branches": ["A", "B"], "extra_precip": false, "seed": 1, "branch_a_in": 7, "n_train": 1435155, "n_test": 412880, "epochs_trained": 13, "best_val_rmse_fwi": 14.03966965379287, "pooled_all_test": {"units": "fwi", "n": 412880, "kge": 0.8448519428992222, "r": 0.8870717215386612, "alpha": 0.8938965171614388, "beta": 1.0077572208574783, "r2": 0.7867295644488085, "rmse": 14.703806031199065, "mae": 10.42835583173446, "nrmse": 0.4618121214857743, "group": "All"}, "wall_time_sec": 250.97399950027466}

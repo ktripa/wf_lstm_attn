@@ -1,0 +1,17 @@
+2026-09-03 19:58:04,766 [INFO] run_id=ablation-AB-seed4_20260903T235804Z_811fb159 git_commit=unknown
+2026-09-03 19:58:04,771 [INFO] branches=('A', 'B') extra_precip=False seed=4 tag=AB
+2026-09-03 19:58:07,441 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-03 19:58:07,618 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-03 19:58:16,803 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-03 19:58:35,805 [INFO] tag=AB seed=4 epoch=0 train_loss_std=0.3344 val_rmse_fwi=14.5728
+2026-09-03 19:58:53,222 [INFO] tag=AB seed=4 epoch=1 train_loss_std=0.2609 val_rmse_fwi=14.2042
+2026-09-03 19:59:10,639 [INFO] tag=AB seed=4 epoch=2 train_loss_std=0.2413 val_rmse_fwi=14.3738
+2026-09-03 19:59:28,066 [INFO] tag=AB seed=4 epoch=3 train_loss_std=0.2299 val_rmse_fwi=14.7223
+2026-09-03 19:59:45,495 [INFO] tag=AB seed=4 epoch=4 train_loss_std=0.2216 val_rmse_fwi=14.3104
+2026-09-03 20:00:02,929 [INFO] tag=AB seed=4 epoch=5 train_loss_std=0.2151 val_rmse_fwi=14.6245
+2026-09-03 20:00:20,363 [INFO] tag=AB seed=4 epoch=6 train_loss_std=0.2098 val_rmse_fwi=14.5116
+2026-09-03 20:00:37,801 [INFO] tag=AB seed=4 epoch=7 train_loss_std=0.2055 val_rmse_fwi=14.3494
+2026-09-03 20:00:55,236 [INFO] tag=AB seed=4 epoch=8 train_loss_std=0.2016 val_rmse_fwi=14.2614
+2026-09-03 20:01:12,673 [INFO] tag=AB seed=4 epoch=9 train_loss_std=0.1987 val_rmse_fwi=14.5338
+2026-09-03 20:01:12,673 [INFO] early stopping at epoch=9 (best val_rmse_fwi=14.2042)
+2026-09-03 20:01:16,676 [INFO] DONE tag=AB seed=4 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.8510176798479563, 'r': 0.8831465335372071, 'alpha': 0.918468289306796, 'beta': 1.0435152759953865, 'r2': 0.7749209473137019, 'rmse': 15.105391172838253, 'mae': 10.808646655916224, 'nrmse': 0.47442497055519545, 'group': 'All'} wall_time=192s

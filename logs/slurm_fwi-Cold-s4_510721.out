@@ -1,0 +1,16 @@
+host=pfc062.pf.ornl.gov cluster=Cold seed=4
+NVIDIA A2, 15356 MiB
+2026-09-03 18:33:44,743 [INFO] run_id=cluster-Cold-seed4_20260903T223344Z_b7bbea8a git_commit=unknown
+2026-09-03 18:33:44,748 [INFO] cluster=Cold seed=4 lookback=60 run_id=cluster-Cold-seed4_20260903T223344Z_b7bbea8a
+2026-09-03 18:33:46,677 [INFO] raw grid loaded: n_cells=1985 n_weeks=1095
+2026-09-03 18:33:47,058 [INFO] sample table: n=391230 n_cells_in_cluster=378
+2026-09-03 18:33:47,058 [INFO] exclusions: {'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 391230, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_target': 0, 'kept_samples': 391230}
+2026-09-03 18:33:47,089 [INFO] split counts: {'test': 78624, 'train': 273294, 'val': 39312}
+2026-09-03 18:33:47,956 [INFO] device=cuda (NVIDIA A2)
+2026-09-03 18:33:49,166 [INFO] train n=273294 val n=39312 test n=78624
+2026-09-03 18:33:56,499 [INFO] epoch=0 train_loss_std=0.3928 val_rmse_fwi=16.7066
+2026-09-03 18:33:59,825 [INFO] epoch=1 train_loss_std=0.2833 val_rmse_fwi=16.5404
+2026-09-03 18:34:03,153 [INFO] epoch=2 train_loss_std=0.2636 val_rmse_fwi=16.3543
+2026-09-03 18:34:06,484 [INFO] epoch=3 train_loss_std=0.2494 val_rmse_fwi=16.0139
+2026-09-03 18:34:09,817 [INFO] epoch=4 train_loss_std=0.2367 val_rmse_fwi=16.4204
+slurmstepd: error: *** JOB 510721 ON pfc062 CANCELLED AT 2026-09-03T18:34:12 ***

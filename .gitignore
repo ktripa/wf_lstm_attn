@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/
+*.nc
+.env
+*.egg-info/
+.pytest_cache/
+
+# Reproducibility bundle this repo was rebuilt from (~3.5GB, includes the
+# original raw data + a prior implementation) -- not part of this codebase.
+code/
+
+# Claude Code project state, not part of the analysis.
+.claude/

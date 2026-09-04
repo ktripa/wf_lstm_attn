@@ -1,0 +1,23 @@
+host=pfc050.pf.ornl.gov
+NVIDIA A2, 15356 MiB
+loading raw datasets + sample table (ALL)...
+n=2054475
+device=cuda
+forward pass to extract attention weights...
+saved attn_by_lag_class.csv
+saved attn_by_lag_month.csv
+saved attn_centroid_percell.csv (1985 cells); centroid range [24.4, 36.1], mean=30.29
+computing Expected Gradients...
+Traceback (most recent call last):
+  File "/projects/hpcl-cli185/users/ktk/lstm_attn/scripts/run_attention_analysis.py", line 192, in <module>
+    main()
+  File "/projects/hpcl-cli185/users/ktk/lstm_attn/scripts/run_attention_analysis.py", line 168, in main
+    grad = torch.autograd.grad(pred.sum(), x_interp)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/torch/autograd/__init__.py", line 496, in grad
+    result = _engine_run_backward(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: cudnn RNN backward can only be called in training mode

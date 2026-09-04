@@ -1,0 +1,9 @@
+{
+  "n_test": 412880,
+  "centroid_mean": 30.29454723811135,
+  "centroid_std": 1.2132363909018182,
+  "eg_n_explained": 6000,
+  "eg_k_draws": 50,
+  "eg_background_n": 300,
+  "attention_vs_eg_pearson_r": 0.08842296319398091
+}

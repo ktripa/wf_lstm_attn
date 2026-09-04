@@ -1,0 +1,26 @@
+host=pfc033.pf.ornl.gov cluster=Hot-Dry seed=0
+NVIDIA A2, 15356 MiB
+2026-09-03 18:13:43,965 [INFO] run_id=cluster-Hot-Dry-seed0_20260903T221343Z_f655124f git_commit=unknown
+2026-09-03 18:13:43,970 [INFO] cluster=Hot-Dry seed=0 lookback=60 run_id=cluster-Hot-Dry-seed0_20260903T221343Z_f655124f
+2026-09-03 18:13:45,825 [INFO] raw grid loaded: n_cells=1985 n_weeks=1095
+2026-09-03 18:13:46,423 [INFO] sample table: n=687240 n_cells_in_cluster=664
+2026-09-03 18:13:46,423 [INFO] exclusions: {'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 687240, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_target': 0, 'kept_samples': 687240}
+2026-09-03 18:13:46,472 [INFO] split counts: {'test': 138112, 'train': 480072, 'val': 69056}
+2026-09-03 18:14:13,848 [INFO] device=cuda (NVIDIA A2)
+2026-09-03 18:15:01,868 [INFO] train n=480072 val n=69056 test n=138112
+2026-09-03 18:15:09,392 [INFO] epoch=0 train_loss_std=0.3699 val_rmse_fwi=16.6086
+2026-09-03 18:15:15,401 [INFO] epoch=1 train_loss_std=0.2923 val_rmse_fwi=15.9056
+2026-09-03 18:15:21,414 [INFO] epoch=2 train_loss_std=0.2729 val_rmse_fwi=15.8628
+2026-09-03 18:15:27,432 [INFO] epoch=3 train_loss_std=0.2591 val_rmse_fwi=15.7295
+2026-09-03 18:15:33,444 [INFO] epoch=4 train_loss_std=0.2502 val_rmse_fwi=16.1473
+2026-09-03 18:15:39,463 [INFO] epoch=5 train_loss_std=0.2416 val_rmse_fwi=15.9920
+2026-09-03 18:15:45,481 [INFO] epoch=6 train_loss_std=0.2358 val_rmse_fwi=15.9593
+2026-09-03 18:15:51,501 [INFO] epoch=7 train_loss_std=0.2291 val_rmse_fwi=16.6394
+2026-09-03 18:15:57,522 [INFO] epoch=8 train_loss_std=0.2242 val_rmse_fwi=16.7759
+2026-09-03 18:16:03,545 [INFO] epoch=9 train_loss_std=0.2180 val_rmse_fwi=16.1577
+2026-09-03 18:16:09,567 [INFO] epoch=10 train_loss_std=0.2142 val_rmse_fwi=15.9460
+2026-09-03 18:16:15,593 [INFO] epoch=11 train_loss_std=0.2104 val_rmse_fwi=16.2164
+2026-09-03 18:16:15,593 [INFO] early stopping at epoch=11 (best val_rmse_fwi=15.7295)
+2026-09-03 18:16:28,744 [INFO] TEST (pooled, FWI units): {'units': 'fwi', 'n': 138112, 'kge': 0.7750051189087475, 'r': 0.8653294718427065, 'alpha': 0.8208162469002169, 'beta': 1.019486610484599, 'r2': 0.7455711449550834, 'rmse': 16.129333373480303, 'mae': 12.025738245856829, 'nrmse': 0.504409412129588, 'group': 'domain'}
+2026-09-03 18:16:28,746 [INFO] DONE cluster=Hot-Dry seed=0 wall_time=165s
+{"run_id": "cluster-Hot-Dry-seed0_20260903T221343Z_f655124f", "cluster": "Hot-Dry", "seed": 0, "lookback": 60, "n_train": 480072, "n_val": 69056, "n_test": 138112, "exclusions": {"cells_dropped_no_cluster_assignment": 0, "candidate_grid_weeks_before_exclusion": 687240, "excluded_missing_branch_a": 0, "excluded_missing_branch_b_window": 0, "excluded_missing_target": 0, "kept_samples": 687240}, "split_counts": {"test": 138112, "train": 480072, "val": 69056}, "best_val_rmse_fwi": 15.729517488920324, "epochs_trained": 12, "test_pooled_metrics_fwi": {"units": "fwi", "n": 138112, "kge": 0.7750051189087475, "r": 0.8653294718427065, "alpha": 0.8208162469002169, "beta": 1.019486610484599, "r2": 0.7455711449550834, "rmse": 16.129333373480303, "mae": 12.025738245856829, "nrmse": 0.504409412129588, "group": "domain"}, "wall_time_sec": 164.77339816093445}

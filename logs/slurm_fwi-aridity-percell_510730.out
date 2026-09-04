@@ -1,0 +1,28 @@
+host=pfc050.pf.ornl.gov
+NVIDIA A2, 15356 MiB
+loading raw datasets + sample table (ALL, no cluster filter)...
+sample table n=2054475, exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+fitting input standardizers on train split (deterministic, seed-independent)...
+device=cuda
+seed=0: loading results/cluster-ALL-seed0_20260903T222641Z_5768ae15/model.pt
+seed=0 done
+seed=1: loading results/cluster-ALL-seed1_20260903T223344Z_41588a68/model.pt
+seed=1 done
+seed=2: loading results/cluster-ALL-seed2_20260903T223344Z_e22db084/model.pt
+seed=2 done
+seed=3: loading results/cluster-ALL-seed3_20260903T223344Z_2ef0ffa2/model.pt
+seed=3 done
+seed=4: loading results/cluster-ALL-seed4_20260903T223345Z_7493491d/model.pt
+seed=4 done
+
+=== Aridity tier pooled skill (mean +- std across 5 seeds) ===
+aridity_tier  kge_mean  kge_std   r_mean    r_std  alpha_mean  alpha_std  beta_mean  beta_std  r2_mean   r2_std  rmse_mean  rmse_std  mae_mean  mae_std  nrmse_mean  nrmse_std
+        Arid  0.798956 0.009671 0.867639 0.007406    0.851682   0.009791   1.026538  0.013741 0.749810 0.013373  16.978025  0.452293 12.627806 0.297891    0.500048   0.013321
+       Humid  0.672052 0.031353 0.844668 0.011933    0.745736   0.023334   0.864031  0.025531 0.678008 0.026711   7.346129  0.303135  4.987933 0.182367    0.567058   0.023399
+   Semi-Arid  0.764840 0.007788 0.837270 0.004127    0.830894   0.011415   1.006710  0.011602 0.700439 0.007021  15.838630  0.184764 11.435997 0.099842    0.547292   0.006384
+   Sub-Humid  0.737254 0.014360 0.838627 0.002766    0.800716   0.017245   0.945463  0.016826 0.694451 0.001301  10.177940  0.021674  7.503063 0.065065    0.552764   0.001177
+
+Per-grid-cell KGE(+r/alpha/beta) across 5 seeds saved: results/aridity_and_percell_analysis/per_grid_cell_kge_components_mean_std_5seeds.csv (1985 cells)
+Monthly skill by tier saved: results/aridity_and_percell_analysis/monthly_skill_mean_std.csv
+Decile conditional bias saved: results/aridity_and_percell_analysis/decile_bias_mean_std.csv
+Raw predictions saved: results/aridity_and_percell_analysis/raw_test_predictions_5seeds.parquet (2064400 rows)

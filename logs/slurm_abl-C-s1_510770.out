@@ -1,0 +1,35 @@
+host=pfc058.pf.ornl.gov seed=1 args=--branches C
+NVIDIA A2, 15356 MiB
+2026-09-03 20:06:16,975 [INFO] run_id=ablation-C-seed1_20260904T000616Z_87dd32b0 git_commit=unknown
+2026-09-03 20:06:16,980 [INFO] branches=('C',) extra_precip=False seed=1 tag=C
+2026-09-03 20:06:20,651 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-03 20:06:20,844 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-03 20:06:21,635 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-03 20:06:25,032 [INFO] tag=C seed=1 epoch=0 train_loss_std=1.0003 val_rmse_fwi=23.7027
+2026-09-03 20:06:26,622 [INFO] tag=C seed=1 epoch=1 train_loss_std=1.0000 val_rmse_fwi=23.7073
+2026-09-03 20:06:28,152 [INFO] tag=C seed=1 epoch=2 train_loss_std=1.0000 val_rmse_fwi=23.7087
+2026-09-03 20:06:29,625 [INFO] tag=C seed=1 epoch=3 train_loss_std=1.0000 val_rmse_fwi=23.7046
+2026-09-03 20:06:31,174 [INFO] tag=C seed=1 epoch=4 train_loss_std=1.0000 val_rmse_fwi=23.7002
+2026-09-03 20:06:32,779 [INFO] tag=C seed=1 epoch=5 train_loss_std=1.0000 val_rmse_fwi=23.7077
+2026-09-03 20:06:34,358 [INFO] tag=C seed=1 epoch=6 train_loss_std=1.0000 val_rmse_fwi=23.6911
+2026-09-03 20:06:35,883 [INFO] tag=C seed=1 epoch=7 train_loss_std=1.0000 val_rmse_fwi=23.7188
+2026-09-03 20:06:37,452 [INFO] tag=C seed=1 epoch=8 train_loss_std=1.0000 val_rmse_fwi=23.7132
+2026-09-03 20:06:38,981 [INFO] tag=C seed=1 epoch=9 train_loss_std=1.0000 val_rmse_fwi=23.7110
+2026-09-03 20:06:40,545 [INFO] tag=C seed=1 epoch=10 train_loss_std=1.0000 val_rmse_fwi=23.7146
+2026-09-03 20:06:42,154 [INFO] tag=C seed=1 epoch=11 train_loss_std=1.0000 val_rmse_fwi=23.7121
+2026-09-03 20:06:43,674 [INFO] tag=C seed=1 epoch=12 train_loss_std=1.0000 val_rmse_fwi=23.6908
+2026-09-03 20:06:45,228 [INFO] tag=C seed=1 epoch=13 train_loss_std=1.0000 val_rmse_fwi=23.7035
+2026-09-03 20:06:46,782 [INFO] tag=C seed=1 epoch=14 train_loss_std=1.0000 val_rmse_fwi=23.7056
+2026-09-03 20:06:48,295 [INFO] tag=C seed=1 epoch=15 train_loss_std=1.0000 val_rmse_fwi=23.6930
+2026-09-03 20:06:49,852 [INFO] tag=C seed=1 epoch=16 train_loss_std=1.0000 val_rmse_fwi=23.7010
+2026-09-03 20:06:51,373 [INFO] tag=C seed=1 epoch=17 train_loss_std=1.0000 val_rmse_fwi=23.6977
+2026-09-03 20:06:52,926 [INFO] tag=C seed=1 epoch=18 train_loss_std=1.0000 val_rmse_fwi=23.7044
+2026-09-03 20:06:54,468 [INFO] tag=C seed=1 epoch=19 train_loss_std=1.0000 val_rmse_fwi=23.7068
+2026-09-03 20:06:56,004 [INFO] tag=C seed=1 epoch=20 train_loss_std=1.0000 val_rmse_fwi=23.7186
+2026-09-03 20:06:56,004 [INFO] early stopping at epoch=20 (best val_rmse_fwi=23.6908)
+/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+2026-09-03 20:06:57,085 [INFO] DONE tag=C seed=1 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.3069363314186755, 'r': 0.5305805094018644, 'alpha': 0.4904580869131107, 'beta': 1.0186983785859622, 'r2': 0.2792080741060263, 'rmse': 27.03145318704577, 'mae': 21.08385514510959, 'nrmse': 0.8489946559866991, 'group': 'All'} wall_time=40s
+{"tag": "C", "branches": ["C"], "extra_precip": false, "seed": 1, "branch_a_in": 7, "n_train": 1435155, "n_test": 412880, "epochs_trained": 21, "best_val_rmse_fwi": 23.690828120344847, "pooled_all_test": {"units": "fwi", "n": 412880, "kge": 0.3069363314186755, "r": 0.5305805094018644, "alpha": 0.4904580869131107, "beta": 1.0186983785859622, "r2": 0.2792080741060263, "rmse": 27.03145318704577, "mae": 21.08385514510959, "nrmse": 0.8489946559866991, "group": "All"}, "wall_time_sec": 40.10225510597229}

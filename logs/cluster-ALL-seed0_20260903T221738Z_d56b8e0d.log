@@ -1,0 +1,7 @@
+2026-09-03 18:17:38,806 [INFO] run_id=cluster-ALL-seed0_20260903T221738Z_d56b8e0d git_commit=unknown
+2026-09-03 18:17:38,810 [INFO] cluster=ALL seed=0 lookback=60 run_id=cluster-ALL-seed0_20260903T221738Z_d56b8e0d
+2026-09-03 18:17:39,264 [INFO] raw grid loaded: n_cells=1985 n_weeks=1095
+2026-09-03 18:17:40,872 [INFO] sample table: n=2054475 n_cells_in_cluster=1985
+2026-09-03 18:17:40,872 [INFO] exclusions: {'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-03 18:17:41,031 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-03 18:21:25,878 [INFO] device=cuda (NVIDIA A2)

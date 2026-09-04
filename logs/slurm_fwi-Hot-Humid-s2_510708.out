@@ -1,0 +1,16 @@
+host=pfc050.pf.ornl.gov cluster=Hot-Humid seed=2
+NVIDIA A2, 15356 MiB
+2026-09-03 18:33:44,499 [INFO] run_id=cluster-Hot-Humid-seed2_20260903T223344Z_4638ef68 git_commit=unknown
+2026-09-03 18:33:44,503 [INFO] cluster=Hot-Humid seed=2 lookback=60 run_id=cluster-Hot-Humid-seed2_20260903T223344Z_4638ef68
+2026-09-03 18:33:46,354 [INFO] raw grid loaded: n_cells=1985 n_weeks=1095
+2026-09-03 18:33:46,798 [INFO] sample table: n=438840 n_cells_in_cluster=424
+2026-09-03 18:33:46,798 [INFO] exclusions: {'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 438840, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_target': 0, 'kept_samples': 438840}
+2026-09-03 18:33:46,829 [INFO] split counts: {'test': 88192, 'train': 306552, 'val': 44096}
+2026-09-03 18:33:47,719 [INFO] device=cuda (NVIDIA A2)
+2026-09-03 18:33:48,873 [INFO] train n=306552 val n=44096 test n=88192
+2026-09-03 18:33:55,322 [INFO] epoch=0 train_loss_std=0.4396 val_rmse_fwi=12.7691
+2026-09-03 18:33:59,032 [INFO] epoch=1 train_loss_std=0.3168 val_rmse_fwi=12.5720
+2026-09-03 18:34:02,747 [INFO] epoch=2 train_loss_std=0.2652 val_rmse_fwi=11.0632
+2026-09-03 18:34:06,461 [INFO] epoch=3 train_loss_std=0.2424 val_rmse_fwi=10.9819
+2026-09-03 18:34:10,179 [INFO] epoch=4 train_loss_std=0.2274 val_rmse_fwi=10.7751
+slurmstepd: error: *** JOB 510708 ON pfc050 CANCELLED AT 2026-09-03T18:34:12 ***

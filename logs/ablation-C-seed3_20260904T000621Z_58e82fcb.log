@@ -1,0 +1,17 @@
+2026-09-03 20:06:21,619 [INFO] run_id=ablation-C-seed3_20260904T000621Z_58e82fcb git_commit=unknown
+2026-09-03 20:06:21,624 [INFO] branches=('C',) extra_precip=False seed=3 tag=C
+2026-09-03 20:06:24,553 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-03 20:06:24,710 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-03 20:06:25,549 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-03 20:06:28,095 [INFO] tag=C seed=3 epoch=0 train_loss_std=1.0005 val_rmse_fwi=23.6933
+2026-09-03 20:06:29,185 [INFO] tag=C seed=3 epoch=1 train_loss_std=1.0001 val_rmse_fwi=23.6811
+2026-09-03 20:06:30,271 [INFO] tag=C seed=3 epoch=2 train_loss_std=1.0000 val_rmse_fwi=23.7112
+2026-09-03 20:06:31,355 [INFO] tag=C seed=3 epoch=3 train_loss_std=1.0000 val_rmse_fwi=23.7042
+2026-09-03 20:06:32,447 [INFO] tag=C seed=3 epoch=4 train_loss_std=1.0000 val_rmse_fwi=23.6852
+2026-09-03 20:06:33,535 [INFO] tag=C seed=3 epoch=5 train_loss_std=1.0000 val_rmse_fwi=23.7116
+2026-09-03 20:06:34,627 [INFO] tag=C seed=3 epoch=6 train_loss_std=1.0000 val_rmse_fwi=23.7156
+2026-09-03 20:06:35,714 [INFO] tag=C seed=3 epoch=7 train_loss_std=1.0000 val_rmse_fwi=23.7092
+2026-09-03 20:06:36,802 [INFO] tag=C seed=3 epoch=8 train_loss_std=1.0000 val_rmse_fwi=23.6980
+2026-09-03 20:06:37,891 [INFO] tag=C seed=3 epoch=9 train_loss_std=1.0000 val_rmse_fwi=23.7024
+2026-09-03 20:06:37,891 [INFO] early stopping at epoch=9 (best val_rmse_fwi=23.6811)
+2026-09-03 20:06:38,672 [INFO] DONE tag=C seed=3 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.3064415947362361, 'r': 0.5305505303393805, 'alpha': 0.48973508390560966, 'beta': 1.0164369203491124, 'r2': 0.2792787516740287, 'rmse': 27.03012786406514, 'mae': 21.070417545433834, 'nrmse': 0.8489530306948502, 'group': 'All'} wall_time=17s

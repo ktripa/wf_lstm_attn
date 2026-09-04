@@ -1,0 +1,28 @@
+{
+  "tag": "AB_precipctrl",
+  "branches": [
+    "A",
+    "B"
+  ],
+  "extra_precip": true,
+  "seed": 3,
+  "branch_a_in": 67,
+  "n_train": 1435155,
+  "n_test": 412880,
+  "epochs_trained": 15,
+  "best_val_rmse_fwi": 14.206844218605973,
+  "pooled_all_test": {
+    "units": "fwi",
+    "n": 412880,
+    "kge": 0.8454465970744387,
+    "r": 0.882094896302821,
+    "alpha": 0.9014124829978252,
+    "beta": 1.0162985388723733,
+    "r2": 0.7771880650114786,
+    "rmse": 15.029123808993765,
+    "mae": 10.565614380424558,
+    "nrmse": 0.4720295912212722,
+    "group": "All"
+  },
+  "wall_time_sec": 286.8476059436798
+}

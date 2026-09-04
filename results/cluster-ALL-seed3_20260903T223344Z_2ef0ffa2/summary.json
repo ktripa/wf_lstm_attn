@@ -1,0 +1,38 @@
+{
+  "run_id": "cluster-ALL-seed3_20260903T223344Z_2ef0ffa2",
+  "cluster": "ALL",
+  "seed": 3,
+  "lookback": 60,
+  "n_train": 1435155,
+  "n_val": 206440,
+  "n_test": 412880,
+  "exclusions": {
+    "cells_dropped_no_cluster_assignment": 0,
+    "candidate_grid_weeks_before_exclusion": 2054475,
+    "excluded_missing_branch_a": 0,
+    "excluded_missing_branch_b_window": 0,
+    "excluded_missing_target": 0,
+    "kept_samples": 2054475
+  },
+  "split_counts": {
+    "test": 412880,
+    "train": 1435155,
+    "val": 206440
+  },
+  "best_val_rmse_fwi": 14.06926464786224,
+  "epochs_trained": 14,
+  "test_pooled_metrics_fwi": {
+    "units": "fwi",
+    "n": 412880,
+    "kge": 0.8306989624097614,
+    "r": 0.8813400069663692,
+    "alpha": 0.8795765439671429,
+    "beta": 0.9910089700538485,
+    "r2": 0.7765957594858993,
+    "rmse": 15.049086664543081,
+    "mae": 10.621265526659178,
+    "nrmse": 0.4726565777751333,
+    "group": "domain"
+  },
+  "wall_time_sec": 266.0613443851471
+}

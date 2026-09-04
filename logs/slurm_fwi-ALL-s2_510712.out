@@ -1,0 +1,23 @@
+host=pfc058.pf.ornl.gov cluster=ALL seed=2
+NVIDIA A2, 15356 MiB
+2026-09-03 18:33:44,956 [INFO] run_id=cluster-ALL-seed2_20260903T223344Z_e22db084 git_commit=unknown
+2026-09-03 18:33:44,961 [INFO] cluster=ALL seed=2 lookback=60 run_id=cluster-ALL-seed2_20260903T223344Z_e22db084
+2026-09-03 18:33:46,731 [INFO] raw grid loaded: n_cells=1985 n_weeks=1095
+2026-09-03 18:33:48,879 [INFO] sample table: n=2054475 n_cells_in_cluster=1985
+2026-09-03 18:33:48,879 [INFO] exclusions: {'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-03 18:33:49,069 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-03 18:33:53,347 [INFO] device=cuda (NVIDIA A2)
+2026-09-03 18:33:59,984 [INFO] train n=1435155 val n=206440 test n=412880
+2026-09-03 18:34:20,039 [INFO] epoch=0 train_loss_std=0.3333 val_rmse_fwi=13.9516
+2026-09-03 18:34:38,316 [INFO] epoch=1 train_loss_std=0.2631 val_rmse_fwi=14.1285
+2026-09-03 18:34:56,682 [INFO] epoch=2 train_loss_std=0.2467 val_rmse_fwi=14.2740
+2026-09-03 18:35:14,952 [INFO] epoch=3 train_loss_std=0.2360 val_rmse_fwi=14.2246
+2026-09-03 18:35:33,238 [INFO] epoch=4 train_loss_std=0.2269 val_rmse_fwi=14.1564
+2026-09-03 18:35:51,580 [INFO] epoch=5 train_loss_std=0.2200 val_rmse_fwi=14.2994
+2026-09-03 18:36:09,859 [INFO] epoch=6 train_loss_std=0.2142 val_rmse_fwi=14.2460
+2026-09-03 18:36:28,178 [INFO] epoch=7 train_loss_std=0.2090 val_rmse_fwi=14.3133
+2026-09-03 18:36:46,412 [INFO] epoch=8 train_loss_std=0.2052 val_rmse_fwi=14.4826
+2026-09-03 18:36:46,412 [INFO] early stopping at epoch=8 (best val_rmse_fwi=13.9516)
+2026-09-03 18:36:51,253 [INFO] TEST (pooled, FWI units): {'units': 'fwi', 'n': 412880, 'kge': 0.8456006330343288, 'r': 0.8882207881305616, 'alpha': 0.8934998798245722, 'beta': 0.9984845080446738, 'r2': 0.7889037158477721, 'rmse': 14.62866623919034, 'mae': 10.398990805471074, 'nrmse': 0.4594521565432335, 'group': 'domain'}
+2026-09-03 18:36:51,256 [INFO] DONE cluster=ALL seed=2 wall_time=186s
+{"run_id": "cluster-ALL-seed2_20260903T223344Z_e22db084", "cluster": "ALL", "seed": 2, "lookback": 60, "n_train": 1435155, "n_val": 206440, "n_test": 412880, "exclusions": {"cells_dropped_no_cluster_assignment": 0, "candidate_grid_weeks_before_exclusion": 2054475, "excluded_missing_branch_a": 0, "excluded_missing_branch_b_window": 0, "excluded_missing_target": 0, "kept_samples": 2054475}, "split_counts": {"test": 412880, "train": 1435155, "val": 206440}, "best_val_rmse_fwi": 13.951595797531143, "epochs_trained": 9, "test_pooled_metrics_fwi": {"units": "fwi", "n": 412880, "kge": 0.8456006330343288, "r": 0.8882207881305616, "alpha": 0.8934998798245722, "beta": 0.9984845080446738, "r2": 0.7889037158477721, "rmse": 14.62866623919034, "mae": 10.398990805471074, "nrmse": 0.4594521565432335, "group": "domain"}, "wall_time_sec": 186.29268670082092}

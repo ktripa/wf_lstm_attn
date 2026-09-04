@@ -1,0 +1,25 @@
+2026-09-03 18:33:44,266 [INFO] run_id=cluster-ALL-seed3_20260903T223344Z_2ef0ffa2 git_commit=unknown
+2026-09-03 18:33:44,271 [INFO] cluster=ALL seed=3 lookback=60 run_id=cluster-ALL-seed3_20260903T223344Z_2ef0ffa2
+2026-09-03 18:33:46,135 [INFO] raw grid loaded: n_cells=1985 n_weeks=1095
+2026-09-03 18:33:47,914 [INFO] sample table: n=2054475 n_cells_in_cluster=1985
+2026-09-03 18:33:47,914 [INFO] exclusions: {'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-03 18:33:48,095 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-03 18:33:51,984 [INFO] device=cuda (NVIDIA A2)
+2026-09-03 18:33:57,654 [INFO] train n=1435155 val n=206440 test n=412880
+2026-09-03 18:34:16,761 [INFO] epoch=0 train_loss_std=0.3314 val_rmse_fwi=14.3191
+2026-09-03 18:34:34,354 [INFO] epoch=1 train_loss_std=0.2680 val_rmse_fwi=14.3160
+2026-09-03 18:34:51,951 [INFO] epoch=2 train_loss_std=0.2478 val_rmse_fwi=14.5511
+2026-09-03 18:35:09,562 [INFO] epoch=3 train_loss_std=0.2355 val_rmse_fwi=14.4756
+2026-09-03 18:35:27,185 [INFO] epoch=4 train_loss_std=0.2266 val_rmse_fwi=14.2124
+2026-09-03 18:35:44,820 [INFO] epoch=5 train_loss_std=0.2197 val_rmse_fwi=14.0693
+2026-09-03 18:36:02,453 [INFO] epoch=6 train_loss_std=0.2140 val_rmse_fwi=14.2349
+2026-09-03 18:36:20,094 [INFO] epoch=7 train_loss_std=0.2093 val_rmse_fwi=14.4731
+2026-09-03 18:36:37,737 [INFO] epoch=8 train_loss_std=0.2054 val_rmse_fwi=14.2607
+2026-09-03 18:36:55,376 [INFO] epoch=9 train_loss_std=0.2021 val_rmse_fwi=14.3414
+2026-09-03 18:37:13,017 [INFO] epoch=10 train_loss_std=0.1992 val_rmse_fwi=14.3487
+2026-09-03 18:37:30,658 [INFO] epoch=11 train_loss_std=0.1962 val_rmse_fwi=14.4310
+2026-09-03 18:37:48,303 [INFO] epoch=12 train_loss_std=0.1938 val_rmse_fwi=14.3863
+2026-09-03 18:38:05,930 [INFO] epoch=13 train_loss_std=0.1917 val_rmse_fwi=14.3525
+2026-09-03 18:38:05,931 [INFO] early stopping at epoch=13 (best val_rmse_fwi=14.0693)
+2026-09-03 18:38:10,333 [INFO] TEST (pooled, FWI units): {'units': 'fwi', 'n': 412880, 'kge': 0.8306989624097614, 'r': 0.8813400069663692, 'alpha': 0.8795765439671429, 'beta': 0.9910089700538485, 'r2': 0.7765957594858993, 'rmse': 15.049086664543081, 'mae': 10.621265526659178, 'nrmse': 0.4726565777751333, 'group': 'domain'}
+2026-09-03 18:38:10,336 [INFO] DONE cluster=ALL seed=3 wall_time=266s

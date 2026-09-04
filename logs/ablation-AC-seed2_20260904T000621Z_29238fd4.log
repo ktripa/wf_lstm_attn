@@ -1,0 +1,20 @@
+2026-09-03 20:06:21,620 [INFO] run_id=ablation-AC-seed2_20260904T000621Z_29238fd4 git_commit=unknown
+2026-09-03 20:06:21,624 [INFO] branches=('A', 'C') extra_precip=False seed=2 tag=AC
+2026-09-03 20:06:24,410 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-03 20:06:24,565 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-03 20:06:25,458 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-03 20:06:28,175 [INFO] tag=AC seed=2 epoch=0 train_loss_std=0.3837 val_rmse_fwi=15.6917
+2026-09-03 20:06:29,374 [INFO] tag=AC seed=2 epoch=1 train_loss_std=0.3567 val_rmse_fwi=15.7759
+2026-09-03 20:06:30,570 [INFO] tag=AC seed=2 epoch=2 train_loss_std=0.3520 val_rmse_fwi=15.7740
+2026-09-03 20:06:31,764 [INFO] tag=AC seed=2 epoch=3 train_loss_std=0.3484 val_rmse_fwi=15.7261
+2026-09-03 20:06:32,969 [INFO] tag=AC seed=2 epoch=4 train_loss_std=0.3462 val_rmse_fwi=15.6684
+2026-09-03 20:06:34,171 [INFO] tag=AC seed=2 epoch=5 train_loss_std=0.3448 val_rmse_fwi=15.7188
+2026-09-03 20:06:35,371 [INFO] tag=AC seed=2 epoch=6 train_loss_std=0.3433 val_rmse_fwi=15.6787
+2026-09-03 20:06:36,571 [INFO] tag=AC seed=2 epoch=7 train_loss_std=0.3419 val_rmse_fwi=15.7466
+2026-09-03 20:06:37,771 [INFO] tag=AC seed=2 epoch=8 train_loss_std=0.3412 val_rmse_fwi=15.7084
+2026-09-03 20:06:38,971 [INFO] tag=AC seed=2 epoch=9 train_loss_std=0.3408 val_rmse_fwi=15.6872
+2026-09-03 20:06:40,174 [INFO] tag=AC seed=2 epoch=10 train_loss_std=0.3398 val_rmse_fwi=15.8089
+2026-09-03 20:06:41,375 [INFO] tag=AC seed=2 epoch=11 train_loss_std=0.3389 val_rmse_fwi=15.7634
+2026-09-03 20:06:42,577 [INFO] tag=AC seed=2 epoch=12 train_loss_std=0.3388 val_rmse_fwi=15.7604
+2026-09-03 20:06:42,577 [INFO] early stopping at epoch=12 (best val_rmse_fwi=15.6684)
+2026-09-03 20:06:43,379 [INFO] DONE tag=AC seed=2 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.8222158049176279, 'r': 0.8648635049464407, 'alpha': 0.8851292861640608, 'beta': 1.012250176674157, 'r2': 0.7472786752990133, 'rmse': 16.006094687155052, 'mae': 11.57808817423493, 'nrmse': 0.5027139591268445, 'group': 'All'} wall_time=22s

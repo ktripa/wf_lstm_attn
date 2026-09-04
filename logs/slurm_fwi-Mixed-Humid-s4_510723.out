@@ -1,0 +1,20 @@
+host=pfc063.pf.ornl.gov cluster=Mixed-Humid seed=4
+NVIDIA A2, 15356 MiB
+2026-09-03 18:33:44,267 [INFO] run_id=cluster-Mixed-Humid-seed4_20260903T223344Z_e56ec6cd git_commit=unknown
+2026-09-03 18:33:44,271 [INFO] cluster=Mixed-Humid seed=4 lookback=60 run_id=cluster-Mixed-Humid-seed4_20260903T223344Z_e56ec6cd
+2026-09-03 18:33:46,205 [INFO] raw grid loaded: n_cells=1985 n_weeks=1095
+2026-09-03 18:33:46,435 [INFO] sample table: n=257715 n_cells_in_cluster=249
+2026-09-03 18:33:46,435 [INFO] exclusions: {'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 257715, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_target': 0, 'kept_samples': 257715}
+2026-09-03 18:33:46,453 [INFO] split counts: {'test': 51792, 'train': 180027, 'val': 25896}
+2026-09-03 18:33:47,119 [INFO] device=cuda (NVIDIA A2)
+2026-09-03 18:33:48,009 [INFO] train n=180027 val n=25896 test n=51792
+2026-09-03 18:33:54,069 [INFO] epoch=0 train_loss_std=0.4468 val_rmse_fwi=11.4724
+2026-09-03 18:33:56,256 [INFO] epoch=1 train_loss_std=0.3062 val_rmse_fwi=10.7561
+2026-09-03 18:33:58,445 [INFO] epoch=2 train_loss_std=0.2714 val_rmse_fwi=9.4448
+2026-09-03 18:34:00,638 [INFO] epoch=3 train_loss_std=0.2495 val_rmse_fwi=9.4568
+2026-09-03 18:34:02,830 [INFO] epoch=4 train_loss_std=0.2343 val_rmse_fwi=9.6668
+2026-09-03 18:34:05,023 [INFO] epoch=5 train_loss_std=0.2218 val_rmse_fwi=9.4614
+2026-09-03 18:34:07,218 [INFO] epoch=6 train_loss_std=0.2127 val_rmse_fwi=9.8380
+2026-09-03 18:34:09,413 [INFO] epoch=7 train_loss_std=0.2042 val_rmse_fwi=9.6591
+2026-09-03 18:34:11,608 [INFO] epoch=8 train_loss_std=0.1994 val_rmse_fwi=9.3839
+slurmstepd: error: *** JOB 510723 ON pfc063 CANCELLED AT 2026-09-03T18:34:12 ***

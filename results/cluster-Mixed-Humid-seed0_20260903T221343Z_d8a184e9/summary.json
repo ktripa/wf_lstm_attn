@@ -1,0 +1,38 @@
+{
+  "run_id": "cluster-Mixed-Humid-seed0_20260903T221343Z_d8a184e9",
+  "cluster": "Mixed-Humid",
+  "seed": 0,
+  "lookback": 60,
+  "n_train": 180027,
+  "n_val": 25896,
+  "n_test": 51792,
+  "exclusions": {
+    "cells_dropped_no_cluster_assignment": 0,
+    "candidate_grid_weeks_before_exclusion": 257715,
+    "excluded_missing_branch_a": 0,
+    "excluded_missing_branch_b_window": 0,
+    "excluded_missing_target": 0,
+    "kept_samples": 257715
+  },
+  "split_counts": {
+    "test": 51792,
+    "train": 180027,
+    "val": 25896
+  },
+  "best_val_rmse_fwi": 8.904394540735233,
+  "epochs_trained": 13,
+  "test_pooled_metrics_fwi": {
+    "units": "fwi",
+    "n": 51792,
+    "kge": 0.8551099788213787,
+    "r": 0.8613906841355458,
+    "alpha": 0.9725970091760519,
+    "beta": 1.0320881892077427,
+    "r2": 0.7281644509064651,
+    "rmse": 10.024941973535455,
+    "mae": 7.012730850334412,
+    "nrmse": 0.5213785084691687,
+    "group": "domain"
+  },
+  "wall_time_sec": 49.16813397407532
+}

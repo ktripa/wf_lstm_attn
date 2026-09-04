@@ -1,0 +1,30 @@
+host=pfc033.pf.ornl.gov cluster=Hot-Humid seed=0
+NVIDIA A2, 15356 MiB
+2026-09-03 18:13:43,965 [INFO] run_id=cluster-Hot-Humid-seed0_20260903T221343Z_3fe05dd2 git_commit=unknown
+2026-09-03 18:13:43,970 [INFO] cluster=Hot-Humid seed=0 lookback=60 run_id=cluster-Hot-Humid-seed0_20260903T221343Z_3fe05dd2
+2026-09-03 18:13:45,826 [INFO] raw grid loaded: n_cells=1985 n_weeks=1095
+2026-09-03 18:13:46,240 [INFO] sample table: n=438840 n_cells_in_cluster=424
+2026-09-03 18:13:46,240 [INFO] exclusions: {'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 438840, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_target': 0, 'kept_samples': 438840}
+2026-09-03 18:13:46,271 [INFO] split counts: {'test': 88192, 'train': 306552, 'val': 44096}
+2026-09-03 18:13:58,510 [INFO] device=cuda (NVIDIA A2)
+2026-09-03 18:14:18,872 [INFO] train n=306552 val n=44096 test n=88192
+2026-09-03 18:14:24,134 [INFO] epoch=0 train_loss_std=0.4247 val_rmse_fwi=12.2255
+2026-09-03 18:14:27,927 [INFO] epoch=1 train_loss_std=0.3051 val_rmse_fwi=11.2779
+2026-09-03 18:14:31,726 [INFO] epoch=2 train_loss_std=0.2514 val_rmse_fwi=10.7428
+2026-09-03 18:14:35,527 [INFO] epoch=3 train_loss_std=0.2306 val_rmse_fwi=10.3903
+2026-09-03 18:14:39,330 [INFO] epoch=4 train_loss_std=0.2174 val_rmse_fwi=10.4929
+2026-09-03 18:14:43,134 [INFO] epoch=5 train_loss_std=0.2078 val_rmse_fwi=10.9072
+2026-09-03 18:14:46,937 [INFO] epoch=6 train_loss_std=0.2004 val_rmse_fwi=10.2974
+2026-09-03 18:14:50,742 [INFO] epoch=7 train_loss_std=0.1925 val_rmse_fwi=10.1680
+2026-09-03 18:14:54,547 [INFO] epoch=8 train_loss_std=0.1876 val_rmse_fwi=10.2473
+2026-09-03 18:14:58,355 [INFO] epoch=9 train_loss_std=0.1823 val_rmse_fwi=10.4622
+2026-09-03 18:15:02,160 [INFO] epoch=10 train_loss_std=0.1781 val_rmse_fwi=10.7047
+2026-09-03 18:15:05,968 [INFO] epoch=11 train_loss_std=0.1753 val_rmse_fwi=10.5646
+2026-09-03 18:15:09,772 [INFO] epoch=12 train_loss_std=0.1709 val_rmse_fwi=10.6584
+2026-09-03 18:15:13,576 [INFO] epoch=13 train_loss_std=0.1672 val_rmse_fwi=10.3443
+2026-09-03 18:15:17,382 [INFO] epoch=14 train_loss_std=0.1643 val_rmse_fwi=10.4693
+2026-09-03 18:15:21,188 [INFO] epoch=15 train_loss_std=0.1619 val_rmse_fwi=10.3754
+2026-09-03 18:15:21,188 [INFO] early stopping at epoch=15 (best val_rmse_fwi=10.1680)
+2026-09-03 18:15:26,938 [INFO] TEST (pooled, FWI units): {'units': 'fwi', 'n': 88192, 'kge': 0.8324265263916649, 'r': 0.8636530233372205, 'alpha': 0.9076872279534717, 'beta': 0.9688756826714457, 'r2': 0.742212715624858, 'rmse': 10.837363855367732, 'mae': 7.7674636397293035, 'nrmse': 0.5077275690516933, 'group': 'domain'}
+2026-09-03 18:15:26,941 [INFO] DONE cluster=Hot-Humid seed=0 wall_time=103s
+{"run_id": "cluster-Hot-Humid-seed0_20260903T221343Z_3fe05dd2", "cluster": "Hot-Humid", "seed": 0, "lookback": 60, "n_train": 306552, "n_val": 44096, "n_test": 88192, "exclusions": {"cells_dropped_no_cluster_assignment": 0, "candidate_grid_weeks_before_exclusion": 438840, "excluded_missing_branch_a": 0, "excluded_missing_branch_b_window": 0, "excluded_missing_target": 0, "kept_samples": 438840}, "split_counts": {"test": 88192, "train": 306552, "val": 44096}, "best_val_rmse_fwi": 10.1679603156544, "epochs_trained": 16, "test_pooled_metrics_fwi": {"units": "fwi", "n": 88192, "kge": 0.8324265263916649, "r": 0.8636530233372205, "alpha": 0.9076872279534717, "beta": 0.9688756826714457, "r2": 0.742212715624858, "rmse": 10.837363855367732, "mae": 7.7674636397293035, "nrmse": 0.5077275690516933, "group": "domain"}, "wall_time_sec": 102.96867656707764}

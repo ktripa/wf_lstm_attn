@@ -1,0 +1,13 @@
+2026-09-03 18:33:44,510 [INFO] run_id=cluster-Cold-seed3_20260903T223344Z_b2de8dec git_commit=unknown
+2026-09-03 18:33:44,515 [INFO] cluster=Cold seed=3 lookback=60 run_id=cluster-Cold-seed3_20260903T223344Z_b2de8dec
+2026-09-03 18:33:46,403 [INFO] raw grid loaded: n_cells=1985 n_weeks=1095
+2026-09-03 18:33:46,783 [INFO] sample table: n=391230 n_cells_in_cluster=378
+2026-09-03 18:33:46,783 [INFO] exclusions: {'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 391230, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_target': 0, 'kept_samples': 391230}
+2026-09-03 18:33:46,811 [INFO] split counts: {'test': 78624, 'train': 273294, 'val': 39312}
+2026-09-03 18:33:47,724 [INFO] device=cuda (NVIDIA A2)
+2026-09-03 18:33:48,959 [INFO] train n=273294 val n=39312 test n=78624
+2026-09-03 18:33:56,194 [INFO] epoch=0 train_loss_std=0.3936 val_rmse_fwi=16.4903
+2026-09-03 18:33:59,524 [INFO] epoch=1 train_loss_std=0.2837 val_rmse_fwi=16.3504
+2026-09-03 18:34:02,865 [INFO] epoch=2 train_loss_std=0.2655 val_rmse_fwi=16.4969
+2026-09-03 18:34:06,207 [INFO] epoch=3 train_loss_std=0.2513 val_rmse_fwi=17.2202
+2026-09-03 18:34:09,548 [INFO] epoch=4 train_loss_std=0.2383 val_rmse_fwi=16.2102

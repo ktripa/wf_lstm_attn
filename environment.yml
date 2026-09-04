@@ -1,0 +1,39 @@
+# Conda environment for the FWI attribution LSTM+attention pipeline.
+#
+# Create with:  conda env create -f environment.yml
+# Update with:  conda env update -f environment.yml --prune
+#
+# NOTE: `pytorch-cuda` is pinned to 12.1 as a starting point. Check pathfinder's
+# GPU/driver setup (e.g. `nvidia-smi`, `module avail cuda`) and adjust this
+# version (or drop the cudatoolkit lines for a CPU-only env) before installing.
+name: fwi-attn
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch=2.*
+  - pytorch-cuda=12.1
+  - numpy
+  - pandas
+  - xarray
+  - netcdf4
+  - h5netcdf
+  - dask
+  - bottleneck
+  - scikit-learn
+  - scipy
+  - statsmodels
+  - matplotlib
+  - seaborn
+  - pyyaml
+  - tqdm
+  - joblib
+  - rioxarray
+  - geopandas
+  - shapely
+  - pyproj
+  - pytest
+  - ipykernel
+  - pip

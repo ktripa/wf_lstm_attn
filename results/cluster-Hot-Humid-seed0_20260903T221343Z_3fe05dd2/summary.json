@@ -1,0 +1,38 @@
+{
+  "run_id": "cluster-Hot-Humid-seed0_20260903T221343Z_3fe05dd2",
+  "cluster": "Hot-Humid",
+  "seed": 0,
+  "lookback": 60,
+  "n_train": 306552,
+  "n_val": 44096,
+  "n_test": 88192,
+  "exclusions": {
+    "cells_dropped_no_cluster_assignment": 0,
+    "candidate_grid_weeks_before_exclusion": 438840,
+    "excluded_missing_branch_a": 0,
+    "excluded_missing_branch_b_window": 0,
+    "excluded_missing_target": 0,
+    "kept_samples": 438840
+  },
+  "split_counts": {
+    "test": 88192,
+    "train": 306552,
+    "val": 44096
+  },
+  "best_val_rmse_fwi": 10.1679603156544,
+  "epochs_trained": 16,
+  "test_pooled_metrics_fwi": {
+    "units": "fwi",
+    "n": 88192,
+    "kge": 0.8324265263916649,
+    "r": 0.8636530233372205,
+    "alpha": 0.9076872279534717,
+    "beta": 0.9688756826714457,
+    "r2": 0.742212715624858,
+    "rmse": 10.837363855367732,
+    "mae": 7.7674636397293035,
+    "nrmse": 0.5077275690516933,
+    "group": "domain"
+  },
+  "wall_time_sec": 102.96867656707764
+}

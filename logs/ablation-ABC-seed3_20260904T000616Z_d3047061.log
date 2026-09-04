@@ -1,0 +1,21 @@
+2026-09-03 20:06:16,490 [INFO] run_id=ablation-ABC-seed3_20260904T000616Z_d3047061 git_commit=unknown
+2026-09-03 20:06:16,495 [INFO] branches=('A', 'B', 'C') extra_precip=False seed=3 tag=ABC
+2026-09-03 20:06:18,974 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-03 20:06:19,131 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-03 20:06:27,600 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-03 20:06:46,475 [INFO] tag=ABC seed=3 epoch=0 train_loss_std=0.3314 val_rmse_fwi=14.3191
+2026-09-03 20:07:03,930 [INFO] tag=ABC seed=3 epoch=1 train_loss_std=0.2680 val_rmse_fwi=14.3160
+2026-09-03 20:07:21,387 [INFO] tag=ABC seed=3 epoch=2 train_loss_std=0.2478 val_rmse_fwi=14.5511
+2026-09-03 20:07:38,849 [INFO] tag=ABC seed=3 epoch=3 train_loss_std=0.2355 val_rmse_fwi=14.4756
+2026-09-03 20:07:56,320 [INFO] tag=ABC seed=3 epoch=4 train_loss_std=0.2266 val_rmse_fwi=14.2124
+2026-09-03 20:08:13,845 [INFO] tag=ABC seed=3 epoch=5 train_loss_std=0.2197 val_rmse_fwi=14.0693
+2026-09-03 20:08:31,371 [INFO] tag=ABC seed=3 epoch=6 train_loss_std=0.2140 val_rmse_fwi=14.2349
+2026-09-03 20:08:48,903 [INFO] tag=ABC seed=3 epoch=7 train_loss_std=0.2093 val_rmse_fwi=14.4731
+2026-09-03 20:09:06,438 [INFO] tag=ABC seed=3 epoch=8 train_loss_std=0.2054 val_rmse_fwi=14.2607
+2026-09-03 20:09:23,979 [INFO] tag=ABC seed=3 epoch=9 train_loss_std=0.2021 val_rmse_fwi=14.3414
+2026-09-03 20:09:41,523 [INFO] tag=ABC seed=3 epoch=10 train_loss_std=0.1992 val_rmse_fwi=14.3487
+2026-09-03 20:09:59,065 [INFO] tag=ABC seed=3 epoch=11 train_loss_std=0.1962 val_rmse_fwi=14.4310
+2026-09-03 20:10:16,602 [INFO] tag=ABC seed=3 epoch=12 train_loss_std=0.1938 val_rmse_fwi=14.3863
+2026-09-03 20:10:34,142 [INFO] tag=ABC seed=3 epoch=13 train_loss_std=0.1917 val_rmse_fwi=14.3525
+2026-09-03 20:10:34,142 [INFO] early stopping at epoch=13 (best val_rmse_fwi=14.0693)
+2026-09-03 20:10:38,169 [INFO] DONE tag=ABC seed=3 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.8306989624097614, 'r': 0.8813400069663692, 'alpha': 0.8795765439671429, 'beta': 0.9910089700538485, 'r2': 0.7765957594858993, 'rmse': 15.049086664543081, 'mae': 10.621265526659178, 'nrmse': 0.4726565777751333, 'group': 'All'} wall_time=262s

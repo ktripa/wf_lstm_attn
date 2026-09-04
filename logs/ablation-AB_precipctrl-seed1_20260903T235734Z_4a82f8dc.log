@@ -1,0 +1,18 @@
+2026-09-03 19:57:34,912 [INFO] run_id=ablation-AB_precipctrl-seed1_20260903T235734Z_4a82f8dc git_commit=unknown
+2026-09-03 19:57:34,916 [INFO] branches=('A', 'B') extra_precip=True seed=1 tag=AB_precipctrl
+2026-09-03 19:57:38,636 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-03 19:57:38,830 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-03 19:57:52,080 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-03 19:58:11,850 [INFO] tag=AB_precipctrl seed=1 epoch=0 train_loss_std=0.3031 val_rmse_fwi=14.4943
+2026-09-03 19:58:29,582 [INFO] tag=AB_precipctrl seed=1 epoch=1 train_loss_std=0.2410 val_rmse_fwi=14.4686
+2026-09-03 19:58:47,682 [INFO] tag=AB_precipctrl seed=1 epoch=2 train_loss_std=0.2233 val_rmse_fwi=14.3037
+2026-09-03 19:59:05,865 [INFO] tag=AB_precipctrl seed=1 epoch=3 train_loss_std=0.2126 val_rmse_fwi=14.3384
+2026-09-03 19:59:23,997 [INFO] tag=AB_precipctrl seed=1 epoch=4 train_loss_std=0.2056 val_rmse_fwi=14.3249
+2026-09-03 19:59:42,200 [INFO] tag=AB_precipctrl seed=1 epoch=5 train_loss_std=0.1993 val_rmse_fwi=14.4246
+2026-09-03 20:00:00,369 [INFO] tag=AB_precipctrl seed=1 epoch=6 train_loss_std=0.1950 val_rmse_fwi=14.4196
+2026-09-03 20:00:18,537 [INFO] tag=AB_precipctrl seed=1 epoch=7 train_loss_std=0.1913 val_rmse_fwi=14.4496
+2026-09-03 20:00:36,730 [INFO] tag=AB_precipctrl seed=1 epoch=8 train_loss_std=0.1882 val_rmse_fwi=14.5439
+2026-09-03 20:00:54,844 [INFO] tag=AB_precipctrl seed=1 epoch=9 train_loss_std=0.1858 val_rmse_fwi=14.3935
+2026-09-03 20:01:12,636 [INFO] tag=AB_precipctrl seed=1 epoch=10 train_loss_std=0.1834 val_rmse_fwi=14.5053
+2026-09-03 20:01:12,636 [INFO] early stopping at epoch=10 (best val_rmse_fwi=14.3037)
+2026-09-03 20:01:17,151 [INFO] DONE tag=AB_precipctrl seed=1 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.8365720200876855, 'r': 0.8800214327716912, 'alpha': 0.8931589568689902, 'beta': 1.0299806525402595, 'r2': 0.772471213941003, 'rmse': 15.187371342457274, 'mae': 10.739318560988218, 'nrmse': 0.4769997757431306, 'group': 'All'} wall_time=222s

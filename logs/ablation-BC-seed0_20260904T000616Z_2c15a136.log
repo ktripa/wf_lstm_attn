@@ -1,0 +1,20 @@
+2026-09-03 20:06:16,550 [INFO] run_id=ablation-BC-seed0_20260904T000616Z_2c15a136 git_commit=unknown
+2026-09-03 20:06:16,554 [INFO] branches=('B', 'C') extra_precip=False seed=0 tag=BC
+2026-09-03 20:06:19,444 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-03 20:06:19,601 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-03 20:06:28,071 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-03 20:06:46,415 [INFO] tag=BC seed=0 epoch=0 train_loss_std=0.5868 val_rmse_fwi=19.2248
+2026-09-03 20:07:03,656 [INFO] tag=BC seed=0 epoch=1 train_loss_std=0.4758 val_rmse_fwi=19.2934
+2026-09-03 20:07:20,925 [INFO] tag=BC seed=0 epoch=2 train_loss_std=0.4429 val_rmse_fwi=19.5661
+2026-09-03 20:07:38,189 [INFO] tag=BC seed=0 epoch=3 train_loss_std=0.4191 val_rmse_fwi=19.5152
+2026-09-03 20:07:55,458 [INFO] tag=BC seed=0 epoch=4 train_loss_std=0.4013 val_rmse_fwi=19.1193
+2026-09-03 20:08:12,736 [INFO] tag=BC seed=0 epoch=5 train_loss_std=0.3853 val_rmse_fwi=19.4141
+2026-09-03 20:08:30,015 [INFO] tag=BC seed=0 epoch=6 train_loss_std=0.3718 val_rmse_fwi=19.1893
+2026-09-03 20:08:47,291 [INFO] tag=BC seed=0 epoch=7 train_loss_std=0.3604 val_rmse_fwi=19.8018
+2026-09-03 20:09:04,576 [INFO] tag=BC seed=0 epoch=8 train_loss_std=0.3506 val_rmse_fwi=19.2071
+2026-09-03 20:09:21,852 [INFO] tag=BC seed=0 epoch=9 train_loss_std=0.3414 val_rmse_fwi=20.0147
+2026-09-03 20:09:39,131 [INFO] tag=BC seed=0 epoch=10 train_loss_std=0.3334 val_rmse_fwi=20.1657
+2026-09-03 20:09:56,421 [INFO] tag=BC seed=0 epoch=11 train_loss_std=0.3262 val_rmse_fwi=19.9299
+2026-09-03 20:10:13,700 [INFO] tag=BC seed=0 epoch=12 train_loss_std=0.3196 val_rmse_fwi=19.9752
+2026-09-03 20:10:13,700 [INFO] early stopping at epoch=12 (best val_rmse_fwi=19.1193)
+2026-09-03 20:10:17,426 [INFO] DONE tag=BC seed=0 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.6823439518178969, 'r': 0.7688020172291924, 'alpha': 0.78220699814672, 'beta': 0.9956335308180213, 'r2': 0.5908387959470822, 'rmse': 20.36627769116014, 'mae': 14.693029176577749, 'nrmse': 0.639657098806007, 'group': 'All'} wall_time=241s

@@ -1,0 +1,7 @@
+2026-09-03 19:56:04,509 [INFO] run_id=ablation-AB-seed0_20260903T235604Z_f0a4cace git_commit=unknown
+2026-09-03 19:56:04,514 [INFO] branches=('A', 'B') extra_precip=False seed=0 tag=AB
+2026-09-03 19:56:07,056 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-03 19:56:07,212 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-03 19:56:15,870 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-03 19:56:34,677 [INFO] tag=AB seed=0 epoch=0 train_loss_std=0.3286 val_rmse_fwi=14.2313
+2026-09-03 19:56:39,275 [INFO] DONE tag=AB seed=0 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.8290797186249727, 'r': 0.883976407867612, 'alpha': 0.8761774685439914, 'beta': 0.9795000156624072, 'r2': 0.7805147279944931, 'rmse': 14.916506740663934, 'mae': 10.571114956584093, 'nrmse': 0.4684925527748621, 'group': 'All'} wall_time=35s

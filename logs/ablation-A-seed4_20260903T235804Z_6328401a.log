@@ -1,0 +1,16 @@
+2026-09-03 19:58:04,332 [INFO] run_id=ablation-A-seed4_20260903T235804Z_6328401a git_commit=unknown
+2026-09-03 19:58:04,336 [INFO] branches=('A',) extra_precip=False seed=4 tag=A
+2026-09-03 19:58:06,944 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-03 19:58:07,100 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-03 19:58:07,748 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-03 19:58:10,159 [INFO] tag=A seed=4 epoch=0 train_loss_std=0.3794 val_rmse_fwi=15.7787
+2026-09-03 19:58:11,350 [INFO] tag=A seed=4 epoch=1 train_loss_std=0.3568 val_rmse_fwi=15.8264
+2026-09-03 19:58:12,536 [INFO] tag=A seed=4 epoch=2 train_loss_std=0.3531 val_rmse_fwi=15.8534
+2026-09-03 19:58:13,724 [INFO] tag=A seed=4 epoch=3 train_loss_std=0.3508 val_rmse_fwi=15.8516
+2026-09-03 19:58:14,916 [INFO] tag=A seed=4 epoch=4 train_loss_std=0.3488 val_rmse_fwi=15.8505
+2026-09-03 19:58:16,106 [INFO] tag=A seed=4 epoch=5 train_loss_std=0.3463 val_rmse_fwi=15.8731
+2026-09-03 19:58:17,294 [INFO] tag=A seed=4 epoch=6 train_loss_std=0.3450 val_rmse_fwi=15.7955
+2026-09-03 19:58:18,483 [INFO] tag=A seed=4 epoch=7 train_loss_std=0.3431 val_rmse_fwi=15.7944
+2026-09-03 19:58:19,671 [INFO] tag=A seed=4 epoch=8 train_loss_std=0.3423 val_rmse_fwi=15.9359
+2026-09-03 19:58:19,671 [INFO] early stopping at epoch=8 (best val_rmse_fwi=15.7787)
+2026-09-03 19:58:20,437 [INFO] DONE tag=A seed=4 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.7927243095391004, 'r': 0.8630081672749648, 'alpha': 0.8450869630466818, 'beta': 1.0140854749504051, 'r2': 0.7440659571480548, 'rmse': 16.107512073954613, 'mae': 11.730660772631593, 'nrmse': 0.5058992417981522, 'group': 'All'} wall_time=16s

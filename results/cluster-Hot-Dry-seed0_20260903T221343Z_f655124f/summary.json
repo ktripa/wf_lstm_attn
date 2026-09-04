@@ -1,0 +1,38 @@
+{
+  "run_id": "cluster-Hot-Dry-seed0_20260903T221343Z_f655124f",
+  "cluster": "Hot-Dry",
+  "seed": 0,
+  "lookback": 60,
+  "n_train": 480072,
+  "n_val": 69056,
+  "n_test": 138112,
+  "exclusions": {
+    "cells_dropped_no_cluster_assignment": 0,
+    "candidate_grid_weeks_before_exclusion": 687240,
+    "excluded_missing_branch_a": 0,
+    "excluded_missing_branch_b_window": 0,
+    "excluded_missing_target": 0,
+    "kept_samples": 687240
+  },
+  "split_counts": {
+    "test": 138112,
+    "train": 480072,
+    "val": 69056
+  },
+  "best_val_rmse_fwi": 15.729517488920324,
+  "epochs_trained": 12,
+  "test_pooled_metrics_fwi": {
+    "units": "fwi",
+    "n": 138112,
+    "kge": 0.7750051189087475,
+    "r": 0.8653294718427065,
+    "alpha": 0.8208162469002169,
+    "beta": 1.019486610484599,
+    "r2": 0.7455711449550834,
+    "rmse": 16.129333373480303,
+    "mae": 12.025738245856829,
+    "nrmse": 0.504409412129588,
+    "group": "domain"
+  },
+  "wall_time_sec": 164.77339816093445
+}

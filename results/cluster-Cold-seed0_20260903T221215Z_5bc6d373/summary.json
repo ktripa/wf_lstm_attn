@@ -1,0 +1,38 @@
+{
+  "run_id": "cluster-Cold-seed0_20260903T221215Z_5bc6d373",
+  "cluster": "Cold",
+  "seed": 0,
+  "lookback": 60,
+  "n_train": 273294,
+  "n_val": 39312,
+  "n_test": 78624,
+  "exclusions": {
+    "cells_dropped_no_cluster_assignment": 0,
+    "candidate_grid_weeks_before_exclusion": 391230,
+    "excluded_missing_branch_a": 0,
+    "excluded_missing_branch_b_window": 0,
+    "excluded_missing_target": 0,
+    "kept_samples": 391230
+  },
+  "split_counts": {
+    "test": 78624,
+    "train": 273294,
+    "val": 39312
+  },
+  "best_val_rmse_fwi": 15.828089288092285,
+  "epochs_trained": 10,
+  "test_pooled_metrics_fwi": {
+    "units": "fwi",
+    "n": 78624,
+    "kge": 0.8551105164159287,
+    "r": 0.8683742420838148,
+    "alpha": 0.9410623173518965,
+    "beta": 1.0139273784439178,
+    "r2": 0.7483540144460272,
+    "rmse": 16.37361030958156,
+    "mae": 11.901281627669768,
+    "nrmse": 0.50164328516783,
+    "group": "domain"
+  },
+  "wall_time_sec": 71.1442322731018
+}

@@ -1,0 +1,38 @@
+{
+  "run_id": "cluster-Mixed-Dry-seed0_20260903T221343Z_e14d028d",
+  "cluster": "Mixed-Dry",
+  "seed": 0,
+  "lookback": 60,
+  "n_train": 195210,
+  "n_val": 28080,
+  "n_test": 56160,
+  "exclusions": {
+    "cells_dropped_no_cluster_assignment": 0,
+    "candidate_grid_weeks_before_exclusion": 279450,
+    "excluded_missing_branch_a": 0,
+    "excluded_missing_branch_b_window": 0,
+    "excluded_missing_target": 0,
+    "kept_samples": 279450
+  },
+  "split_counts": {
+    "test": 56160,
+    "train": 195210,
+    "val": 28080
+  },
+  "best_val_rmse_fwi": 16.016187444779288,
+  "epochs_trained": 16,
+  "test_pooled_metrics_fwi": {
+    "units": "fwi",
+    "n": 56160,
+    "kge": 0.7186055708317312,
+    "r": 0.8211718502743915,
+    "alpha": 0.7829112076440695,
+    "beta": 1.0087048185561156,
+    "r2": 0.6726435149417569,
+    "rmse": 18.236223115224746,
+    "mae": 12.685853871045408,
+    "nrmse": 0.5721507537863103,
+    "group": "domain"
+  },
+  "wall_time_sec": 59.086368560791016
+}

@@ -1,0 +1,22 @@
+host=pfc050.pf.ornl.gov seed=1 args=--branches B
+NVIDIA A2, 15356 MiB
+2026-09-03 20:11:39,614 [INFO] run_id=ablation-B-seed1_20260904T001139Z_415ce509 git_commit=unknown
+2026-09-03 20:11:39,619 [INFO] branches=('B',) extra_precip=False seed=1 tag=B
+2026-09-03 20:11:42,396 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-03 20:11:42,552 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-03 20:11:50,959 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-03 20:12:09,669 [INFO] tag=B seed=1 epoch=0 train_loss_std=0.5966 val_rmse_fwi=19.1606
+2026-09-03 20:12:26,865 [INFO] tag=B seed=1 epoch=1 train_loss_std=0.4791 val_rmse_fwi=19.3817
+2026-09-03 20:12:44,070 [INFO] tag=B seed=1 epoch=2 train_loss_std=0.4460 val_rmse_fwi=19.3719
+2026-09-03 20:13:01,269 [INFO] tag=B seed=1 epoch=3 train_loss_std=0.4260 val_rmse_fwi=19.0968
+2026-09-03 20:13:18,471 [INFO] tag=B seed=1 epoch=4 train_loss_std=0.4092 val_rmse_fwi=19.3114
+2026-09-03 20:13:35,701 [INFO] tag=B seed=1 epoch=5 train_loss_std=0.3961 val_rmse_fwi=19.3134
+2026-09-03 20:13:52,927 [INFO] tag=B seed=1 epoch=6 train_loss_std=0.3844 val_rmse_fwi=19.4908
+2026-09-03 20:14:10,156 [INFO] tag=B seed=1 epoch=7 train_loss_std=0.3744 val_rmse_fwi=19.4486
+2026-09-03 20:14:27,394 [INFO] tag=B seed=1 epoch=8 train_loss_std=0.3655 val_rmse_fwi=19.3480
+2026-09-03 20:14:44,622 [INFO] tag=B seed=1 epoch=9 train_loss_std=0.3575 val_rmse_fwi=19.4566
+2026-09-03 20:15:01,851 [INFO] tag=B seed=1 epoch=10 train_loss_std=0.3496 val_rmse_fwi=19.6170
+2026-09-03 20:15:19,091 [INFO] tag=B seed=1 epoch=11 train_loss_std=0.3431 val_rmse_fwi=19.8642
+2026-09-03 20:15:19,091 [INFO] early stopping at epoch=11 (best val_rmse_fwi=19.0968)
+2026-09-03 20:15:22,768 [INFO] DONE tag=B seed=1 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.6789648273498587, 'r': 0.7700746837134514, 'alpha': 0.7759627461616264, 'beta': 0.9977109168654688, 'r2': 0.5929698913646607, 'rmse': 20.313170085655276, 'mae': 14.676478850514414, 'nrmse': 0.6379891132576945, 'group': 'All'} wall_time=223s
+{"tag": "B", "branches": ["B"], "extra_precip": false, "seed": 1, "branch_a_in": 7, "n_train": 1435155, "n_test": 412880, "epochs_trained": 12, "best_val_rmse_fwi": 19.096832601379013, "pooled_all_test": {"units": "fwi", "n": 412880, "kge": 0.6789648273498587, "r": 0.7700746837134514, "alpha": 0.7759627461616264, "beta": 0.9977109168654688, "r2": 0.5929698913646607, "rmse": 20.313170085655276, "mae": 14.676478850514414, "nrmse": 0.6379891132576945, "group": "All"}, "wall_time_sec": 223.14623832702637}
