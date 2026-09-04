@@ -1,0 +1,4 @@
+host=pfc031.pf.ornl.gov
+ERROR 1: PROJ: proj_create_from_database: Open of /projects/hpcl-cli185/users/ktk/envs/pgtm2/share/proj failed
+Saved figures/fig2_performance_error_structure.pdf and .png
+Domain-wide (All Regions) KGE = 0.845 +- 0.011

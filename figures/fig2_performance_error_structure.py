@@ -28,6 +28,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import geopandas as gpd
 import matplotlib as mpl
 mpl.use("Agg")
 import matplotlib.font_manager as fm
@@ -49,7 +50,7 @@ for _f in [
     if Path(_f).exists():
         fm.fontManager.addfont(_f)
 
-BIG = 26  # base font size; everything else scales off this per user request ("increase font very high")
+BIG = 36  # +10 over the previous 26, per "font sizes really really big, +10 points minimum"
 mpl.rcParams.update(
     {
         "font.family": "serif",
@@ -77,6 +78,7 @@ PANEL_LABEL_SIZE = BIG + 8
 DATA_DIR = Path("results/aridity_and_percell_analysis")
 OUT_DIR = Path("figures")
 OUT_DIR.mkdir(exist_ok=True)
+SHAPEFILE = Path("results/shapefiles/tx_ok_nm_az_states.shp")
 
 # Three classes of interest, and one fixed color per class used identically
 # in every panel (Okabe-Ito colorblind-safe qualitative triple).
@@ -132,9 +134,9 @@ def panel_a(ax, tier_summary: pd.DataFrame, domain_row: pd.DataFrame):
     df = pd.concat([domain_row, tier_summary.set_index("aridity_tier").loc[CLASSES].reset_index()], ignore_index=True)
     groups = [ALL_LABEL] + CLASSES
     df = df.set_index("aridity_tier").loc[groups]
-    spacing = 1.6  # extra room between groups so the big bold tick labels don't collide
+    spacing = 2.6  # extra room between groups so the big bold tick labels don't collide
     x = np.arange(len(groups)) * spacing
-    width = 0.19
+    width = 0.26
     for i, m in enumerate(METRIC_ORDER):
         ax.bar(
             x + (i - 1.5) * width,
@@ -163,10 +165,11 @@ def panel_a(ax, tier_summary: pd.DataFrame, domain_row: pd.DataFrame):
     label_panel(ax, "a")
 
 
-def panel_b(ax, cax, df_cell: pd.DataFrame):
+def panel_b(ax, cax, df_cell: pd.DataFrame, states: gpd.GeoDataFrame):
     lons, lats, grid = to_grid(df_cell, "kge_mean")
     lon_e, lat_e = grid_edges(lons), grid_edges(lats)
     pcm = ax.pcolormesh(lon_e, lat_e, grid, cmap="viridis", shading="flat", rasterized=True)
+    states.boundary.plot(ax=ax, color="#222222", linewidth=1.6, zorder=5)
     # cax is a dedicated sub-grid cell reserved below ax (see main()), so the
     # colorbar can never overflow into the next GridSpec row regardless of
     # how constrained_layout sizes the equal-aspect map above it.
@@ -177,6 +180,8 @@ def panel_b(ax, cax, df_cell: pd.DataFrame):
     cbar.set_label("KGE (dimensionless)", fontsize=BIG)
     cbar.ax.tick_params(labelsize=BIG - 4)
 
+    ax.set_xlim(lon_e.min(), lon_e.max())
+    ax.set_ylim(lat_e.min(), lat_e.max())
     ax.set_xlabel("Longitude (°)")
     ax.set_ylabel("Latitude (°)")
     ax.set_aspect(1 / np.cos(np.radians(np.nanmean(lats))))
@@ -284,8 +289,9 @@ def main():
     monthly = pd.read_csv(DATA_DIR / "monthly_skill_mean_std.csv")
     monthly = monthly[monthly["aridity_tier"].isin(CLASSES)].copy()
     domain_row = domain_wide_metrics(raw_all)
+    states = gpd.read_file(SHAPEFILE)
 
-    fig = plt.figure(figsize=(24, 15), constrained_layout=True)
+    fig = plt.figure(figsize=(30, 19), constrained_layout=True)
     gs = fig.add_gridspec(2, 3)
     ax_a = fig.add_subplot(gs[0, 0])
     gs_b = gs[0, 1].subgridspec(2, 1, height_ratios=[18, 1], hspace=0.15)
@@ -297,7 +303,7 @@ def main():
     ax_f = fig.add_subplot(gs[1, 2])
 
     panel_a(ax_a, tier_summary, domain_row)
-    panel_b(ax_b, cax_b, percell_all)
+    panel_b(ax_b, cax_b, percell_all, states)
     panel_c(ax_c, percell_all)
     panel_d(ax_d, raw)
     panel_e(ax_e, decile)
