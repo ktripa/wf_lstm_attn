@@ -31,7 +31,7 @@ from fwi_attn.data.splits import assign_split
 from fwi_attn.data.standardization import Standardizer
 from fwi_attn.models.lstm_attention import FWIAttnModel
 
-MODEL_PATH = Path("results/cluster-ALL-seed0_20260903T222641Z_5768ae15/model.pt")
+MODEL_PATH = Path("results/cluster-ALL-seed0_20260904T171251Z_fd2892fb/model.pt")
 OUT_DIR = Path("results/attention_analysis")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 LOOKBACK = BRANCH_B_N_WEEKS
@@ -67,10 +67,14 @@ def main():
     train_mask, test_mask = splits == "train", splits == "test"
     mode, eps = config.standardization.mode, config.standardization.eps
     group_key = table.cell_id if mode == "per_grid_cell" else table.cluster_id
+    # Branch C is static per cell -> per_grid_cell standardization gives zero
+    # within-cell variance and collapses it to 0 everywhere. Standardize it
+    # globally (one group) instead.
+    global_key = np.zeros(table.n, dtype=np.int64)
 
     xa_std = fit_standardizer(mode, eps, table.xa[train_mask], group_key[train_mask], BRANCH_A_FEATURES)
     xb_std = fit_standardizer(mode, eps, table.xb[train_mask], group_key[train_mask], BRANCH_B_FEATURES, extra_lead_dim=LOOKBACK)
-    xc_std = fit_standardizer(mode, eps, table.xc[train_mask], group_key[train_mask], BRANCH_C_FEATURES)
+    xc_std = fit_standardizer(mode, eps, table.xc[train_mask], global_key[train_mask], BRANCH_C_FEATURES)
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"device={device}")
@@ -82,7 +86,7 @@ def main():
     gk_test = group_key[test_mask]
     xa_te = apply_standardizer(xa_std, table.xa[test_mask], gk_test)
     xb_te = apply_standardizer(xb_std, table.xb[test_mask], gk_test, extra_lead_dim=LOOKBACK)
-    xc_te = apply_standardizer(xc_std, table.xc[test_mask], gk_test)
+    xc_te = apply_standardizer(xc_std, table.xc[test_mask], global_key[test_mask])
     cell_id_test = table.cell_id[test_mask]
     aridity_tier_test = table.aridity_tier[test_mask]
     month_test = table.month[test_mask]

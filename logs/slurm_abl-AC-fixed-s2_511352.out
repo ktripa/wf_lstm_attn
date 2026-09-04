@@ -1,0 +1,19 @@
+host=pfc050.pf.ornl.gov seed=2 args=--branches A C
+NVIDIA A2, 15356 MiB
+2026-09-04 14:23:58,618 [INFO] run_id=ablation-AC-seed2_20260904T182358Z_c6cc261d git_commit=1ee7ddb221dfc3a9219ba970d2ec928831ebbe94
+2026-09-04 14:23:58,622 [INFO] branches=('A', 'C') extra_precip=False seed=2 tag=AC
+2026-09-04 14:24:01,043 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-04 14:24:01,198 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-04 14:24:02,231 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-04 14:24:04,870 [INFO] tag=AC seed=2 epoch=0 train_loss_std=0.3646 val_rmse_fwi=15.3004
+2026-09-04 14:24:06,074 [INFO] tag=AC seed=2 epoch=1 train_loss_std=0.3302 val_rmse_fwi=15.5026
+2026-09-04 14:24:07,274 [INFO] tag=AC seed=2 epoch=2 train_loss_std=0.3249 val_rmse_fwi=15.5023
+2026-09-04 14:24:08,474 [INFO] tag=AC seed=2 epoch=3 train_loss_std=0.3219 val_rmse_fwi=15.4881
+2026-09-04 14:24:09,672 [INFO] tag=AC seed=2 epoch=4 train_loss_std=0.3195 val_rmse_fwi=15.4333
+2026-09-04 14:24:10,873 [INFO] tag=AC seed=2 epoch=5 train_loss_std=0.3180 val_rmse_fwi=15.4791
+2026-09-04 14:24:12,072 [INFO] tag=AC seed=2 epoch=6 train_loss_std=0.3165 val_rmse_fwi=15.4850
+2026-09-04 14:24:13,274 [INFO] tag=AC seed=2 epoch=7 train_loss_std=0.3151 val_rmse_fwi=15.4700
+2026-09-04 14:24:14,474 [INFO] tag=AC seed=2 epoch=8 train_loss_std=0.3144 val_rmse_fwi=15.4673
+2026-09-04 14:24:14,474 [INFO] early stopping at epoch=8 (best val_rmse_fwi=15.3004)
+2026-09-04 14:24:15,268 [INFO] DONE tag=AC seed=2 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.8087513140544512, 'r': 0.8722854878282239, 'alpha': 0.8579246955092829, 'beta': 1.008925867492542, 'r2': 0.7605167314549507, 'rmse': 15.581240300307023, 'mae': 11.213978362942907, 'nrmse': 0.48937027754559154, 'group': 'All'} wall_time=17s
+{"tag": "AC", "branches": ["A", "C"], "extra_precip": false, "seed": 2, "branch_a_in": 7, "n_train": 1435155, "n_test": 412880, "epochs_trained": 9, "best_val_rmse_fwi": 15.30042457160813, "pooled_all_test": {"units": "fwi", "n": 412880, "kge": 0.8087513140544512, "r": 0.8722854878282239, "alpha": 0.8579246955092829, "beta": 1.008925867492542, "r2": 0.7605167314549507, "rmse": 15.581240300307023, "mae": 11.213978362942907, "nrmse": 0.48937027754559154, "group": "All"}, "wall_time_sec": 16.64273500442505}

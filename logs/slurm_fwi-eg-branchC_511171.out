@@ -1,0 +1,85 @@
+host=pfc050.pf.ornl.gov
+NVIDIA A2, 15356 MiB
+loading raw datasets + sample table (ALL)...
+device=cuda
+explained samples: 28240 across 1412 cells (up to 20 weeks/cell)
+seed 0: loading results/cluster-ALL-seed0_20260903T222641Z_5768ae15/model.pt
+  seed 0 chunk 1/10 done
+  seed 0 chunk 2/10 done
+  seed 0 chunk 3/10 done
+  seed 0 chunk 4/10 done
+  seed 0 chunk 5/10 done
+  seed 0 chunk 6/10 done
+  seed 0 chunk 7/10 done
+  seed 0 chunk 8/10 done
+  seed 0 chunk 9/10 done
+  seed 0 chunk 10/10 done
+seed 1: loading results/cluster-ALL-seed1_20260903T223344Z_41588a68/model.pt
+  seed 1 chunk 1/10 done
+  seed 1 chunk 2/10 done
+  seed 1 chunk 3/10 done
+  seed 1 chunk 4/10 done
+  seed 1 chunk 5/10 done
+  seed 1 chunk 6/10 done
+  seed 1 chunk 7/10 done
+  seed 1 chunk 8/10 done
+  seed 1 chunk 9/10 done
+  seed 1 chunk 10/10 done
+seed 2: loading results/cluster-ALL-seed2_20260903T223344Z_e22db084/model.pt
+  seed 2 chunk 1/10 done
+  seed 2 chunk 2/10 done
+  seed 2 chunk 3/10 done
+  seed 2 chunk 4/10 done
+  seed 2 chunk 5/10 done
+  seed 2 chunk 6/10 done
+  seed 2 chunk 7/10 done
+  seed 2 chunk 8/10 done
+  seed 2 chunk 9/10 done
+  seed 2 chunk 10/10 done
+seed 3: loading results/cluster-ALL-seed3_20260903T223344Z_2ef0ffa2/model.pt
+  seed 3 chunk 1/10 done
+  seed 3 chunk 2/10 done
+  seed 3 chunk 3/10 done
+  seed 3 chunk 4/10 done
+  seed 3 chunk 5/10 done
+  seed 3 chunk 6/10 done
+  seed 3 chunk 7/10 done
+  seed 3 chunk 8/10 done
+  seed 3 chunk 9/10 done
+  seed 3 chunk 10/10 done
+seed 4: loading results/cluster-ALL-seed4_20260903T223345Z_7493491d/model.pt
+  seed 4 chunk 1/10 done
+  seed 4 chunk 2/10 done
+  seed 4 chunk 3/10 done
+  seed 4 chunk 4/10 done
+  seed 4 chunk 5/10 done
+  seed 4 chunk 6/10 done
+  seed 4 chunk 7/10 done
+  seed 4 chunk 8/10 done
+  seed 4 chunk 9/10 done
+  seed 4 chunk 10/10 done
+saved eg_branchC_percell_perseed.csv (7060 rows = 1412 cells x 5 seeds)
+computing Branch C vs Branch A correlation (full table)...
+                         tmax   tmin  rhmax  rhmin  precip    vpd  wind_speed
+veg_onehot_nlcd41      -0.003  0.009  0.102  0.156   0.080 -0.070       0.049
+veg_onehot_nlcd42      -0.154 -0.086  0.007  0.056   0.052 -0.147       0.060
+veg_onehot_nlcd43       0.009  0.018  0.060  0.082   0.047 -0.036       0.017
+veg_onehot_nlcd52       0.052  0.002 -0.315 -0.393  -0.203  0.243      -0.179
+veg_onehot_nlcd71       0.015 -0.022  0.173  0.141   0.059 -0.063       0.135
+veg_onehot_nlcd81       0.063  0.111  0.242  0.325   0.159 -0.125       0.038
+elevation              -0.364 -0.357 -0.401 -0.469  -0.212 -0.047      -0.041
+map_mean_annual_precip  0.082  0.138  0.521  0.610   0.313 -0.273       0.195
+mavpd_mean_annual_vpd   0.237  0.170 -0.429 -0.401  -0.185  0.455      -0.247
+                        veg_onehot_nlcd41  ...  mavpd_mean_annual_vpd
+veg_onehot_nlcd41                   1.000  ...                 -0.155
+veg_onehot_nlcd42                  -0.056  ...                 -0.323
+veg_onehot_nlcd43                  -0.012  ...                 -0.079
+veg_onehot_nlcd52                  -0.203  ...                  0.538
+veg_onehot_nlcd71                  -0.067  ...                 -0.142
+veg_onehot_nlcd81                  -0.049  ...                 -0.277
+elevation                          -0.163  ...                 -0.097
+map_mean_annual_precip              0.262  ...                 -0.606
+mavpd_mean_annual_vpd              -0.155  ...                  1.000
+
+[9 rows x 9 columns]
+DONE

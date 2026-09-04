@@ -1,0 +1,16 @@
+2026-09-04 14:24:22,336 [INFO] run_id=ablation-BC-seed1_20260904T182422Z_6e71435d git_commit=1ee7ddb221dfc3a9219ba970d2ec928831ebbe94
+2026-09-04 14:24:22,340 [INFO] branches=('B', 'C') extra_precip=False seed=1 tag=BC
+2026-09-04 14:24:25,468 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-04 14:24:25,627 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-04 14:24:34,631 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-04 14:24:53,090 [INFO] tag=BC seed=1 epoch=0 train_loss_std=0.6524 val_rmse_fwi=18.6784
+2026-09-04 14:25:10,426 [INFO] tag=BC seed=1 epoch=1 train_loss_std=0.4642 val_rmse_fwi=18.6886
+2026-09-04 14:25:27,790 [INFO] tag=BC seed=1 epoch=2 train_loss_std=0.4360 val_rmse_fwi=18.9203
+2026-09-04 14:25:45,147 [INFO] tag=BC seed=1 epoch=3 train_loss_std=0.4158 val_rmse_fwi=18.9987
+2026-09-04 14:26:02,505 [INFO] tag=BC seed=1 epoch=4 train_loss_std=0.3998 val_rmse_fwi=19.1791
+2026-09-04 14:26:19,871 [INFO] tag=BC seed=1 epoch=5 train_loss_std=0.3854 val_rmse_fwi=19.0715
+2026-09-04 14:26:37,237 [INFO] tag=BC seed=1 epoch=6 train_loss_std=0.3739 val_rmse_fwi=19.2509
+2026-09-04 14:26:54,606 [INFO] tag=BC seed=1 epoch=7 train_loss_std=0.3630 val_rmse_fwi=19.2704
+2026-09-04 14:27:11,982 [INFO] tag=BC seed=1 epoch=8 train_loss_std=0.3545 val_rmse_fwi=19.0828
+2026-09-04 14:27:11,982 [INFO] early stopping at epoch=8 (best val_rmse_fwi=18.6784)
+2026-09-04 14:27:15,714 [INFO] DONE tag=BC seed=1 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.6782059112696412, 'r': 0.7826382768091797, 'alpha': 0.7627145880049319, 'beta': 0.9990252756030491, 'r2': 0.6121238227560706, 'rmse': 19.82946469509559, 'mae': 14.287882945369644, 'nrmse': 0.6227970594374458, 'group': 'All'} wall_time=173s

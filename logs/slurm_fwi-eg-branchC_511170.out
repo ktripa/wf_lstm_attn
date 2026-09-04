@@ -1,0 +1,49 @@
+host=pfc050.pf.ornl.gov
+NVIDIA A2, 15356 MiB
+loading raw datasets + sample table (ALL)...
+device=cuda
+explained samples: 28240 across 1412 cells (up to 20 weeks/cell)
+seed 0: loading results/cluster-ALL-seed0_20260903T222641Z_5768ae15/model.pt
+Traceback (most recent call last):
+  File "/projects/hpcl-cli185/users/ktk/lstm_attn/scripts/run_eg_attribution_branchC.py", line 208, in <module>
+    main()
+  File "/projects/hpcl-cli185/users/ktk/lstm_attn/scripts/run_eg_attribution_branchC.py", line 153, in main
+    pred, _ = model(xa_interp, xb_interp, xc_interp)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/hpcl-cli185/users/ktk/lstm_attn/src/fwi_attn/models/lstm_attention.py", line 117, in forward
+    ctx, attn_weights = self.branch_b(xb)
+                        ^^^^^^^^^^^^^^^^^
+  File "/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/hpcl-cli185/users/ktk/lstm_attn/src/fwi_attn/models/lstm_attention.py", line 63, in forward
+    return self.attn(hidden_states)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/hpcl-cli185/users/ktk/lstm_attn/src/fwi_attn/models/attention.py", line 21, in forward
+    scores = self.v(torch.tanh(self.W(hidden_states))).squeeze(-1)  # (B, T)
+                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 414.00 MiB. GPU 0 has a total capacity of 14.61 GiB of which 171.75 MiB is free. Including non-PyTorch memory, this process has 14.44 GiB memory in use. Of the allocated memory 13.62 GiB is allocated by PyTorch, and 757.92 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

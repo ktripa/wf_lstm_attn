@@ -1,0 +1,14 @@
+{
+  "n_cells_covered": 1412,
+  "n_weeks_per_cell": 20,
+  "n_explained_total": 28240,
+  "k_draws": 200,
+  "background_n": 500,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

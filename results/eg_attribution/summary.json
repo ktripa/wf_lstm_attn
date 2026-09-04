@@ -1,0 +1,7 @@
+{
+  "n_per_class": 2000,
+  "n_total": 6000,
+  "k_draws": 200,
+  "background_n": 500,
+  "units": "FWI (rescaled per-sample by that cell's fitted target std, per_grid_cell mode)"
+}

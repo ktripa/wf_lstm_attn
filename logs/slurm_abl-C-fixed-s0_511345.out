@@ -1,0 +1,23 @@
+host=pfc031.pf.ornl.gov seed=0 args=--branches C
+NVIDIA A2, 15356 MiB
+2026-09-04 14:23:52,440 [INFO] run_id=ablation-C-seed0_20260904T182352Z_d41e7d92 git_commit=1ee7ddb221dfc3a9219ba970d2ec928831ebbe94
+2026-09-04 14:23:52,445 [INFO] branches=('C',) extra_precip=False seed=0 tag=C
+2026-09-04 14:23:55,090 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-04 14:23:55,248 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-04 14:23:55,927 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-04 14:23:58,537 [INFO] tag=C seed=0 epoch=0 train_loss_std=1.0002 val_rmse_fwi=23.6914
+2026-09-04 14:23:59,632 [INFO] tag=C seed=0 epoch=1 train_loss_std=1.0000 val_rmse_fwi=23.7204
+2026-09-04 14:24:00,722 [INFO] tag=C seed=0 epoch=2 train_loss_std=1.0000 val_rmse_fwi=23.7231
+2026-09-04 14:24:01,812 [INFO] tag=C seed=0 epoch=3 train_loss_std=1.0000 val_rmse_fwi=23.7030
+2026-09-04 14:24:02,903 [INFO] tag=C seed=0 epoch=4 train_loss_std=1.0000 val_rmse_fwi=23.7050
+2026-09-04 14:24:03,995 [INFO] tag=C seed=0 epoch=5 train_loss_std=1.0000 val_rmse_fwi=23.6956
+2026-09-04 14:24:05,086 [INFO] tag=C seed=0 epoch=6 train_loss_std=1.0000 val_rmse_fwi=23.7066
+2026-09-04 14:24:06,180 [INFO] tag=C seed=0 epoch=7 train_loss_std=1.0000 val_rmse_fwi=23.6950
+2026-09-04 14:24:07,272 [INFO] tag=C seed=0 epoch=8 train_loss_std=1.0000 val_rmse_fwi=23.6987
+2026-09-04 14:24:07,272 [INFO] early stopping at epoch=8 (best val_rmse_fwi=23.6914)
+/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+2026-09-04 14:24:08,044 [INFO] DONE tag=C seed=0 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.3069288587398319, 'r': 0.5305636616555621, 'alpha': 0.4904654881231486, 'beta': 1.0187539941307748, 'r2': 0.27918798434151326, 'rmse': 27.03182989197651, 'mae': 21.084332281154904, 'nrmse': 0.8490064874065961, 'group': 'All'} wall_time=16s
+{"tag": "C", "branches": ["C"], "extra_precip": false, "seed": 0, "branch_a_in": 7, "n_train": 1435155, "n_test": 412880, "epochs_trained": 9, "best_val_rmse_fwi": 23.691442204935147, "pooled_all_test": {"units": "fwi", "n": 412880, "kge": 0.3069288587398319, "r": 0.5305636616555621, "alpha": 0.4904654881231486, "beta": 1.0187539941307748, "r2": 0.27918798434151326, "rmse": 27.03182989197651, "mae": 21.084332281154904, "nrmse": 0.8490064874065961, "group": "All"}, "wall_time_sec": 15.596257448196411}

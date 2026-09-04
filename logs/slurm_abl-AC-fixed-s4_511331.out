@@ -1,0 +1,7 @@
+host=pfc031.pf.ornl.gov seed=4 args=A C
+NVIDIA A2, 15356 MiB
+usage: run_ablation.py [-h] [--config CONFIG] --branches {A,B,C} [{A,B,C} ...]
+                       [--extra-precip] --seed SEED [--lookback LOOKBACK]
+                       [--epochs EPOCHS] [--batch-size BATCH_SIZE]
+                       [--patience PATIENCE] [--lr LR]
+run_ablation.py: error: the following arguments are required: --branches

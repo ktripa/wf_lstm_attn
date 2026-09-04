@@ -1,0 +1,22 @@
+2026-09-04 13:12:51,165 [INFO] run_id=cluster-ALL-seed0_20260904T171251Z_fd2892fb git_commit=1ee7ddb221dfc3a9219ba970d2ec928831ebbe94
+2026-09-04 13:12:51,170 [INFO] cluster=ALL seed=0 lookback=60 run_id=cluster-ALL-seed0_20260904T171251Z_fd2892fb
+2026-09-04 13:12:52,937 [INFO] raw grid loaded: n_cells=1985 n_weeks=1095
+2026-09-04 13:12:55,021 [INFO] sample table: n=2054475 n_cells_in_cluster=1985
+2026-09-04 13:12:55,021 [INFO] exclusions: {'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-04 13:12:55,175 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-04 13:12:58,683 [INFO] device=cuda (NVIDIA A2)
+2026-09-04 13:13:03,839 [INFO] train n=1435155 val n=206440 test n=412880
+2026-09-04 13:13:25,043 [INFO] epoch=0 train_loss_std=0.3185 val_rmse_fwi=13.8869
+2026-09-04 13:13:42,482 [INFO] epoch=1 train_loss_std=0.2614 val_rmse_fwi=13.8985
+2026-09-04 13:13:59,939 [INFO] epoch=2 train_loss_std=0.2443 val_rmse_fwi=13.6713
+2026-09-04 13:14:17,402 [INFO] epoch=3 train_loss_std=0.2329 val_rmse_fwi=13.7106
+2026-09-04 13:14:34,871 [INFO] epoch=4 train_loss_std=0.2244 val_rmse_fwi=13.6864
+2026-09-04 13:14:52,343 [INFO] epoch=5 train_loss_std=0.2177 val_rmse_fwi=13.8747
+2026-09-04 13:15:09,819 [INFO] epoch=6 train_loss_std=0.2121 val_rmse_fwi=14.2783
+2026-09-04 13:15:27,297 [INFO] epoch=7 train_loss_std=0.2079 val_rmse_fwi=13.9136
+2026-09-04 13:15:44,778 [INFO] epoch=8 train_loss_std=0.2038 val_rmse_fwi=14.2025
+2026-09-04 13:16:02,261 [INFO] epoch=9 train_loss_std=0.2005 val_rmse_fwi=14.0261
+2026-09-04 13:16:19,746 [INFO] epoch=10 train_loss_std=0.1971 val_rmse_fwi=14.2287
+2026-09-04 13:16:19,746 [INFO] early stopping at epoch=10 (best val_rmse_fwi=13.6713)
+2026-09-04 13:16:23,767 [INFO] TEST (pooled, FWI units): {'units': 'fwi', 'n': 412880, 'kge': 0.8354162230443208, 'r': 0.8937239603813615, 'alpha': 0.8743353558493611, 'beta': 1.0012728905953086, 'r2': 0.7983633656606335, 'rmse': 14.297139572330225, 'mae': 10.11284893209115, 'nrmse': 0.44903968013903467, 'group': 'domain'}
+2026-09-04 13:16:23,770 [INFO] DONE cluster=ALL seed=0 wall_time=213s

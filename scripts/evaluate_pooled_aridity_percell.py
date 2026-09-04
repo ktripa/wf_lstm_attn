@@ -76,11 +76,15 @@ def main():
 
     mode, eps = config.standardization.mode, config.standardization.eps
     group_key = table.cell_id if mode == "per_grid_cell" else table.cluster_id
+    # Branch C is static per cell -> per_grid_cell standardization gives zero
+    # within-cell variance and collapses it to 0 everywhere. Standardize it
+    # globally (one group) instead.
+    global_key = np.zeros(table.n, dtype=np.int64)
 
     print("fitting input standardizers on train split (deterministic, seed-independent)...")
     xa_std = fit_standardizer(mode, eps, table.xa[train_mask], group_key[train_mask], BRANCH_A_FEATURES)
     xb_std = fit_standardizer(mode, eps, table.xb[train_mask], group_key[train_mask], BRANCH_B_FEATURES, extra_lead_dim=lookback)
-    xc_std = fit_standardizer(mode, eps, table.xc[train_mask], group_key[train_mask], BRANCH_C_FEATURES)
+    xc_std = fit_standardizer(mode, eps, table.xc[train_mask], global_key[train_mask], BRANCH_C_FEATURES)
     y_std = fit_standardizer(mode, eps, table.y[train_mask].reshape(-1, 1), group_key[train_mask], ["fwi"])
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -89,7 +93,7 @@ def main():
     gk_test = group_key[test_mask]
     xa_te = torch.as_tensor(apply_standardizer(xa_std, table.xa[test_mask], gk_test), dtype=torch.float32, device=device)
     xb_te = torch.as_tensor(apply_standardizer(xb_std, table.xb[test_mask], gk_test, extra_lead_dim=lookback), dtype=torch.float32, device=device)
-    xc_te = torch.as_tensor(apply_standardizer(xc_std, table.xc[test_mask], gk_test), dtype=torch.float32, device=device)
+    xc_te = torch.as_tensor(apply_standardizer(xc_std, table.xc[test_mask], global_key[test_mask]), dtype=torch.float32, device=device)
 
     obs_fwi = table.y[test_mask]
     cell_id_test = table.cell_id[test_mask]

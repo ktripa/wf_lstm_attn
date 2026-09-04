@@ -1,0 +1,29 @@
+host=pfc050.pf.ornl.gov seed=2 args=--branches C
+NVIDIA A2, 15356 MiB
+2026-09-04 14:23:58,619 [INFO] run_id=ablation-C-seed2_20260904T182358Z_0379fbb3 git_commit=1ee7ddb221dfc3a9219ba970d2ec928831ebbe94
+2026-09-04 14:23:58,623 [INFO] branches=('C',) extra_precip=False seed=2 tag=C
+2026-09-04 14:24:01,257 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-04 14:24:01,413 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-04 14:24:02,146 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-04 14:24:04,763 [INFO] tag=C seed=2 epoch=0 train_loss_std=1.0007 val_rmse_fwi=23.7150
+2026-09-04 14:24:05,856 [INFO] tag=C seed=2 epoch=1 train_loss_std=1.0001 val_rmse_fwi=23.6912
+2026-09-04 14:24:06,951 [INFO] tag=C seed=2 epoch=2 train_loss_std=1.0000 val_rmse_fwi=23.7084
+2026-09-04 14:24:08,046 [INFO] tag=C seed=2 epoch=3 train_loss_std=1.0000 val_rmse_fwi=23.7104
+2026-09-04 14:24:09,141 [INFO] tag=C seed=2 epoch=4 train_loss_std=1.0000 val_rmse_fwi=23.7089
+2026-09-04 14:24:10,237 [INFO] tag=C seed=2 epoch=5 train_loss_std=1.0000 val_rmse_fwi=23.7162
+2026-09-04 14:24:11,334 [INFO] tag=C seed=2 epoch=6 train_loss_std=1.0000 val_rmse_fwi=23.6765
+2026-09-04 14:24:12,430 [INFO] tag=C seed=2 epoch=7 train_loss_std=1.0000 val_rmse_fwi=23.6949
+2026-09-04 14:24:13,527 [INFO] tag=C seed=2 epoch=8 train_loss_std=1.0000 val_rmse_fwi=23.6988
+2026-09-04 14:24:14,626 [INFO] tag=C seed=2 epoch=9 train_loss_std=1.0000 val_rmse_fwi=23.7055
+2026-09-04 14:24:15,726 [INFO] tag=C seed=2 epoch=10 train_loss_std=1.0000 val_rmse_fwi=23.6915
+2026-09-04 14:24:16,824 [INFO] tag=C seed=2 epoch=11 train_loss_std=1.0000 val_rmse_fwi=23.7057
+2026-09-04 14:24:17,922 [INFO] tag=C seed=2 epoch=12 train_loss_std=1.0000 val_rmse_fwi=23.7034
+2026-09-04 14:24:19,020 [INFO] tag=C seed=2 epoch=13 train_loss_std=1.0000 val_rmse_fwi=23.7184
+2026-09-04 14:24:20,119 [INFO] tag=C seed=2 epoch=14 train_loss_std=1.0000 val_rmse_fwi=23.7029
+2026-09-04 14:24:20,119 [INFO] early stopping at epoch=14 (best val_rmse_fwi=23.6765)
+/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/projects/hpcl-cli185/users/ktk/envs/pgtm2/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+2026-09-04 14:24:20,900 [INFO] DONE tag=C seed=2 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.30619362486546253, 'r': 0.5305354787086197, 'alpha': 0.4893770979523208, 'beta': 1.0153167010282271, 'r2': 0.27930566198737905, 'rmse': 27.029623233459095, 'mae': 21.063858023743055, 'nrmse': 0.8489371814290037, 'group': 'All'} wall_time=22s
+{"tag": "C", "branches": ["C"], "extra_precip": false, "seed": 2, "branch_a_in": 7, "n_train": 1435155, "n_test": 412880, "epochs_trained": 15, "best_val_rmse_fwi": 23.676490629854854, "pooled_all_test": {"units": "fwi", "n": 412880, "kge": 0.30619362486546253, "r": 0.5305354787086197, "alpha": 0.4893770979523208, "beta": 1.0153167010282271, "r2": 0.27930566198737905, "rmse": 27.029623233459095, "mae": 21.063858023743055, "nrmse": 0.8489371814290037, "group": "All"}, "wall_time_sec": 22.273939847946167}

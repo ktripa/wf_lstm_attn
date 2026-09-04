@@ -1,0 +1,17 @@
+host=pfc050.pf.ornl.gov
+NVIDIA A2, 15356 MiB
+loading raw datasets + sample table (ALL)...
+n=2054475
+device=cuda
+forward pass to extract attention weights...
+saved attn_by_lag_class.csv
+saved attn_by_lag_month.csv
+saved attn_centroid_percell.csv (1985 cells); centroid range [23.4, 34.0], mean=28.52
+computing Expected Gradients...
+  EG draw 10/50
+  EG draw 20/50
+  EG draw 30/50
+  EG draw 40/50
+  EG draw 50/50
+saved eg_vs_attention_by_lag.csv; Pearson r (attention vs |EG|, by lag) = 0.329
+DONE

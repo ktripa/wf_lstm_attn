@@ -1,0 +1,19 @@
+host=pfc050.pf.ornl.gov seed=2 args=--branches B C
+NVIDIA A2, 15356 MiB
+2026-09-04 14:24:22,336 [INFO] run_id=ablation-BC-seed2_20260904T182422Z_a14d0eef git_commit=1ee7ddb221dfc3a9219ba970d2ec928831ebbe94
+2026-09-04 14:24:22,340 [INFO] branches=('B', 'C') extra_precip=False seed=2 tag=BC
+2026-09-04 14:24:25,433 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-04 14:24:25,593 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-04 14:24:34,466 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-04 14:24:52,973 [INFO] tag=BC seed=2 epoch=0 train_loss_std=0.6179 val_rmse_fwi=18.6018
+2026-09-04 14:25:10,302 [INFO] tag=BC seed=2 epoch=1 train_loss_std=0.4671 val_rmse_fwi=18.7091
+2026-09-04 14:25:27,643 [INFO] tag=BC seed=2 epoch=2 train_loss_std=0.4418 val_rmse_fwi=18.9155
+2026-09-04 14:25:44,976 [INFO] tag=BC seed=2 epoch=3 train_loss_std=0.4242 val_rmse_fwi=19.2904
+2026-09-04 14:26:02,310 [INFO] tag=BC seed=2 epoch=4 train_loss_std=0.4095 val_rmse_fwi=19.0179
+2026-09-04 14:26:19,652 [INFO] tag=BC seed=2 epoch=5 train_loss_std=0.3953 val_rmse_fwi=19.3408
+2026-09-04 14:26:36,996 [INFO] tag=BC seed=2 epoch=6 train_loss_std=0.3829 val_rmse_fwi=19.1794
+2026-09-04 14:26:54,342 [INFO] tag=BC seed=2 epoch=7 train_loss_std=0.3731 val_rmse_fwi=19.3339
+2026-09-04 14:27:11,698 [INFO] tag=BC seed=2 epoch=8 train_loss_std=0.3628 val_rmse_fwi=19.4451
+2026-09-04 14:27:11,698 [INFO] early stopping at epoch=8 (best val_rmse_fwi=18.6018)
+2026-09-04 14:27:15,422 [INFO] DONE tag=BC seed=2 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.6955107206647184, 'r': 0.7803638036411618, 'alpha': 0.7891170792319974, 'beta': 0.9985660517801093, 'r2': 0.6088869423985508, 'rmse': 19.912032605862972, 'mae': 14.328852934829413, 'nrmse': 0.6253903241987753, 'group': 'All'} wall_time=173s
+{"tag": "BC", "branches": ["B", "C"], "extra_precip": false, "seed": 2, "branch_a_in": 7, "n_train": 1435155, "n_test": 412880, "epochs_trained": 9, "best_val_rmse_fwi": 18.601806760414583, "pooled_all_test": {"units": "fwi", "n": 412880, "kge": 0.6955107206647184, "r": 0.7803638036411618, "alpha": 0.7891170792319974, "beta": 0.9985660517801093, "r2": 0.6088869423985508, "rmse": 19.912032605862972, "mae": 14.328852934829413, "nrmse": 0.6253903241987753, "group": "All"}, "wall_time_sec": 173.07841777801514}

@@ -92,10 +92,16 @@ def main():
 
     mode, eps = config.standardization.mode, config.standardization.eps
     group_key = table.cell_id if mode == "per_grid_cell" else table.cluster_id
+    # Branch C is static (constant within a cell across all its weekly rows),
+    # so a per_grid_cell standardizer sees zero within-group variance and
+    # collapses every cell's Branch C input to exactly 0 -- the model never
+    # sees any cross-cell difference in land cover/elevation/climatology.
+    # Branch C needs *cross-cell* (global) standardization, not within-cell.
+    global_key = np.zeros(table.n, dtype=np.int64)
 
     xa_std = fit_standardizer(mode, eps, table.xa[train_mask], group_key[train_mask], BRANCH_A_FEATURES)
     xb_std = fit_standardizer(mode, eps, table.xb[train_mask], group_key[train_mask], BRANCH_B_FEATURES, extra_lead_dim=args.lookback)
-    xc_std = fit_standardizer(mode, eps, table.xc[train_mask], group_key[train_mask], BRANCH_C_FEATURES)
+    xc_std = fit_standardizer(mode, eps, table.xc[train_mask], global_key[train_mask], BRANCH_C_FEATURES)
     y_std = fit_standardizer(mode, eps, table.y[train_mask].reshape(-1, 1), group_key[train_mask], ["fwi"])
     y_std.save(run_dir / "target_standardizer.joblib")
 
@@ -106,7 +112,7 @@ def main():
         gk = group_key[mask]
         xa = apply_standardizer(xa_std, table.xa[mask], gk)
         xb = apply_standardizer(xb_std, table.xb[mask], gk, extra_lead_dim=args.lookback)
-        xc = apply_standardizer(xc_std, table.xc[mask], gk)
+        xc = apply_standardizer(xc_std, table.xc[mask], global_key[mask])
         y = apply_standardizer(y_std, table.y[mask].reshape(-1, 1), gk).ravel()
         return (
             torch.as_tensor(xa, dtype=torch.float32, device=device),

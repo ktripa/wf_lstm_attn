@@ -1,0 +1,18 @@
+2026-09-04 14:24:52,332 [INFO] run_id=ablation-ABC-seed0_20260904T182452Z_4766922d git_commit=1ee7ddb221dfc3a9219ba970d2ec928831ebbe94
+2026-09-04 14:24:52,336 [INFO] branches=('A', 'B', 'C') extra_precip=False seed=0 tag=ABC
+2026-09-04 14:24:54,955 [INFO] sample table n=2054475 exclusions={'cells_dropped_no_cluster_assignment': 0, 'candidate_grid_weeks_before_exclusion': 2054475, 'excluded_missing_branch_a': 0, 'excluded_missing_branch_b_window': 0, 'excluded_missing_precip_history': 0, 'excluded_missing_target': 0, 'kept_samples': 2054475}
+2026-09-04 14:24:55,113 [INFO] split counts: {'test': 412880, 'train': 1435155, 'val': 206440}
+2026-09-04 14:25:03,785 [INFO] device=cuda train n=1435155 val n=206440 test n=412880
+2026-09-04 14:25:22,300 [INFO] tag=ABC seed=0 epoch=0 train_loss_std=0.3185 val_rmse_fwi=13.8869
+2026-09-04 14:25:39,722 [INFO] tag=ABC seed=0 epoch=1 train_loss_std=0.2614 val_rmse_fwi=13.8985
+2026-09-04 14:25:57,167 [INFO] tag=ABC seed=0 epoch=2 train_loss_std=0.2443 val_rmse_fwi=13.6713
+2026-09-04 14:26:14,621 [INFO] tag=ABC seed=0 epoch=3 train_loss_std=0.2329 val_rmse_fwi=13.7106
+2026-09-04 14:26:32,079 [INFO] tag=ABC seed=0 epoch=4 train_loss_std=0.2244 val_rmse_fwi=13.6864
+2026-09-04 14:26:49,539 [INFO] tag=ABC seed=0 epoch=5 train_loss_std=0.2177 val_rmse_fwi=13.8747
+2026-09-04 14:27:07,005 [INFO] tag=ABC seed=0 epoch=6 train_loss_std=0.2121 val_rmse_fwi=14.2783
+2026-09-04 14:27:24,469 [INFO] tag=ABC seed=0 epoch=7 train_loss_std=0.2079 val_rmse_fwi=13.9136
+2026-09-04 14:27:41,937 [INFO] tag=ABC seed=0 epoch=8 train_loss_std=0.2038 val_rmse_fwi=14.2025
+2026-09-04 14:27:59,408 [INFO] tag=ABC seed=0 epoch=9 train_loss_std=0.2005 val_rmse_fwi=14.0261
+2026-09-04 14:28:16,880 [INFO] tag=ABC seed=0 epoch=10 train_loss_std=0.1971 val_rmse_fwi=14.2287
+2026-09-04 14:28:16,880 [INFO] early stopping at epoch=10 (best val_rmse_fwi=13.6713)
+2026-09-04 14:28:20,654 [INFO] DONE tag=ABC seed=0 pooled_all={'units': 'fwi', 'n': 412880, 'kge': 0.8354162230443208, 'r': 0.8937239603813615, 'alpha': 0.8743353558493611, 'beta': 1.0012728905953086, 'r2': 0.7983633656606335, 'rmse': 14.297139572330225, 'mae': 10.11284893209115, 'nrmse': 0.44903968013903467, 'group': 'All'} wall_time=208s

@@ -1,0 +1,12 @@
+{
+  "n_samples": 2054475,
+  "variables": [
+    "tmax",
+    "tmin",
+    "rhmax",
+    "rhmin",
+    "precip",
+    "vpd",
+    "wind_speed"
+  ]
+}

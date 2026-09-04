@@ -1,0 +1,18 @@
+host=pfc050.pf.ornl.gov
+NVIDIA A2, 15356 MiB
+loading raw datasets + sample table (ALL)...
+device=cuda
+explained samples: 6000 (2000/class)
+computing joint Expected Gradients: K=200 draws, background=500...
+  draw 20/200
+  draw 40/200
+  draw 60/200
+  draw 80/200
+  draw 100/200
+  draw 120/200
+  draw 140/200
+  draw 160/200
+  draw 180/200
+  draw 200/200
+saved eg_percell_wide.csv (6000 rows, 189 cols)
+DONE
